@@ -62,7 +62,7 @@ function HomepageHeader() {
           Install with one line:
         </h2>
         <div className={styles.terminal}>
-          <Terminal text={"bash -c \"$(curl -fsSL https://raw.githubusercontent.com/mzsrtgzr2/cocmd/main/install.sh)\""}/>
+          <Terminal text={"bash -c \"$(curl -fsSL https://raw.githubusercontent.com/cocmd/cocmd/main/install.sh)\""}/>
         </div>
 
         {/* <div className={styles.terminal2}>
