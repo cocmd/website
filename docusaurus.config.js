@@ -82,7 +82,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/mzsrtgzr2/cocmd',
+            href: 'https://github.com/cocmd/cocmd',
             label: 'GitHub',
             position: 'left',
           },
