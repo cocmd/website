@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[4852],{1939:e=>{e.exports=JSON.parse('{"title":"Cli","description":"cli","slug":"/category/cli","permalink":"/docs/category/cli","navigation":{"previous":{"title":"Roadmap","permalink":"/docs/internals/roadmap"},"next":{"title":"add source","permalink":"/docs/cli/add-source"}}}')}}]);
