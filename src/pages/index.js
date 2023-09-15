@@ -1,12 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import TechnologiesSection from '@site/src/components/Techs';
 import styles from './index.module.css';
-import HeroFeatures from '@site/src/components/HeroFeatures';
 import Terminal from '@site/src/components/Terminal';
 import UseCases from '@site/src/components/UseCases';
 

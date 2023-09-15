@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'CoCMD',
   tagline: 'community powered cmd shortcuts and automations',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/coding_color.png',
 
   // Set the production url of your site here
   url: 'https://cocmd.org',
@@ -71,7 +71,7 @@ const config = {
         title: 'CoCMD',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/cloud.png',
+          src: 'img/coding.png',
         },
         items: [
           {
