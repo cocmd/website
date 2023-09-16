@@ -6,6 +6,9 @@ import TechnologiesSection from '@site/src/components/Techs';
 import styles from './index.module.css';
 import Terminal from '@site/src/components/Terminal';
 import UseCases from '@site/src/components/UseCases';
+import HomeJumbo from '@site/src/components/HomeJumbo';
+import HomeFeatures from '@site/src/components/HomeFeatures';
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -52,15 +55,6 @@ function HomepageHeader() {
           </div>
         </div> */}
 
-        <div className={null}>
-          <UseCases/>
-        </div>
-        <h2>
-          Install with one line:
-        </h2>
-        <div className={styles.terminal}>
-          <Terminal text={"bash -c \"$(curl -fsSL https://raw.githubusercontent.com/cocmd/cocmd/main/install.sh)\""}/>
-        </div>
 
         {/* <div className={styles.terminal2}>
           <Terminal text={"pip install cocmd"}/>
@@ -77,7 +71,7 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="community for bash aliases, scripts and automations">
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
       {/* <HeroFeatures/> */}
 
       {/* <div className={styles.buttons}>
@@ -90,7 +84,10 @@ export default function Home() {
 
       <main>
 
-        <TechnologiesSection />
+      <HomeJumbo />
+      <HomeFeatures />
+
+      <TechnologiesSection />
       </main>
       {/* <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by HAJICON - Flaticon</a> */}
     </Layout>

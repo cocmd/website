@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const CURRENT_STABLE_VERSION = "v1.0.3";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CoCMD',
@@ -57,6 +59,24 @@ const config = {
       }),
     ],
   ],
+
+  customFields: {
+    CURRENT_STABLE_VERSION,
+    LINUX_X11_APP_IMAGE_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/Espanso-X11.AppImage",
+    LINUX_X11_DEB_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/espanso-debian-x11-amd64.deb",
+    LINUX_WAYLAND_DEB_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/espanso-debian-wayland-amd64.deb",
+    MAC_INTEL_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/Espanso-Mac-Intel.zip",
+    MAC_M1_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/Espanso-Mac-M1.zip",
+    WIN_INSTALLER_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/Espanso-Win-Installer-x86_64.exe",
+    WIN_PORTABLE_DOWNLOAD_URL:
+      "https://github.com/federico-terzi/espanso/releases/download/{{{VERSION}}}/Espanso-Win-Portable-x86_64.zip",
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
