@@ -62,7 +62,7 @@
 
 .feature {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -76,11 +76,14 @@
   border-radius: var(--border-radius-large);
   filter: var(--big-shadow);
   padding: 16px;
-  margin: 8px 48px 8px 48px;
+  margin-top: -20px;
+  margin-left: 20px;
+  margin-right: 20px;
   flex: 1;
   text-align: left;
-  min-height: 230px;
-  min-width: 400px;
+  
+  min-width: 200px;
+  max-width: 400px;
 }
 
 .entry {

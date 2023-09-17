@@ -138,7 +138,7 @@ export default function HomeFeatures() {
         }
         description={
           <FeatureDescription
-            title="Endless extensibility"
+            title="Endless possibilities"
             icon={<PuzzlePieceIcon className={styles.icon} />}
           >
             <p>
