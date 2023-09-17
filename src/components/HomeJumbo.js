@@ -104,7 +104,7 @@ const particlesLoaded = useCallback(async container => {
       </div>
       <div className={styles["content"]}>
         <div className={styles.headline}>
-          CMD-Ops As Code
+          <span className={styles.bigunderline}>CMD-Ops As Code</span>
         </div>
         <Fade bottom delay={300}>
           <p className={styles.subtitle}>
