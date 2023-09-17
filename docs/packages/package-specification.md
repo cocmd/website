@@ -6,12 +6,12 @@ title: Package Specification
 TODO: this section is under construction
 
 In this document, we are going to discuss the format specification 
-for Espanso packages and repositories.
+for Cocmd packages and repositories.
 If you are trying to create your first package, we suggest reading
 the [Creating a Package](../creating-a-package) section first,
 as that contains the basic information you'll need for most use-cases.
 
-In the first part, we'll go through the structure of an Espanso package,
+In the first part, we'll go through the structure of an Cocmd package,
 starting from a top level view with the included files, all the way 
 down to the actual content.
 Then, the second part covers the structure a typical package repository.
@@ -30,7 +30,7 @@ written using the [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax.
 
 Optionally, a package can also contain:
 * A `LICENSE` file, if you want to publish your package under a different license
-than the [default HUB one](https://github.com/espanso/hub/blob/main/LICENSE) (MIT).
+than the [default HUB one](https://github.com/cocmd/hub/blob/main/LICENSE) (MIT).
 * Any number of additional YAML files, which can be used to split the matches across multiple
 files, to make them more manageable.
 
@@ -93,7 +93,7 @@ page or a Git repository.
 As we discussed earlier, the `_manifest.yml` file also contains the package version.
 This package version should follow the standard `MAJOR.MINOR.PATCH` format.
 
-When installing or updating a package, Espanso uses the version to determine if an 
+When installing or updating a package, Cocmd uses the version to determine if an 
 update should be performed or not.
 For this reason, we suggest increasing the version after an update is made to the package.
 

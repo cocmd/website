@@ -10,7 +10,7 @@ you have the necessary skills to create a custom package!
 
 In this section, we are going to discuss the different ways in which
 you can create a package and share it with other people.
-We'll cover how to publish it on the Espanso Hub,
+We'll cover how to publish it on the Cocmd Hub,
 which is the recommended way to share a package publicly,
 but we are also going to discuss how to share it privately,
 for example with your company's team.
@@ -49,8 +49,8 @@ section.
 ## Publish on the Hub (public)
 
 If you want to make the package publicly available, the
-Espanso Hub is the recommended approach.
-The Hub itself is hosted on a [GitHub repository](https://github.com/espanso/hub),
+Cocmd Hub is the recommended approach.
+The Hub itself is hosted on a [GitHub repository](https://github.com/cocmd/hub),
 which contains all the available packages.
 Let's see how you can create your own package.
 
@@ -75,7 +75,7 @@ While these are NOT valid names:
 
 Here are the first steps:
 
-1. Visit the [Hub repository](https://github.com/espanso/hub) and **fork it** on your account.
+1. Visit the [Hub repository](https://github.com/cocmd/hub) and **fork it** on your account.
 2. Clone your fork locally using `git`.
 3. Now enter the `packages/` directory and copy the contents of the `dummy-package`
 directory in a new one, called `simple-package` (this should be equal to your package name).
@@ -104,7 +104,7 @@ name: "simple-package"
 title: "Simple Package"
 description: A simple package to show how to create your own one!
 version: 0.1.0
-author: Federico Terzi
+author: Moshe Roth
 ```
 
 ### Customizing the snippets
@@ -133,7 +133,7 @@ In our example, that could be something like:
 
 ```md title="README.md"
 This is a **simple package** and its purpose
-is to show how to create new Espanso packages!
+is to show how to create new Cocmd packages!
 ```
 
 ### Publishing on the Hub
@@ -141,9 +141,9 @@ is to show how to create new Espanso packages!
 Once your package is ready, we can finally publish it on the Hub, awesome!
 
 After committing your changes and pushing it to your forked version of the Hub,
-you'll need to **open a pull request** on the [Espanso Hub repository](https://github.com/espanso/hub).
+you'll need to **open a pull request** on the [Cocmd Hub repository](https://github.com/cocmd/hub).
 
-At that point, the Espanso team will review it and, once verified, your package
+At that point, the Cocmd team will review it and, once verified, your package
 will be published!
 
 ## Publish on a GIT repository (private or public) 
@@ -152,9 +152,9 @@ There are times when sharing a package publicly is not possible,
 for example, when you plan to share it with your company's team.
 
 This section quickly goes through the steps needed to set up an
-external Git repository to host your Espanso packages.
+external Git repository to host your Cocmd packages.
 
-1. Firstly, **fork** the [espanso-external-repo-template](https://github.com/espanso/espanso-external-repo-template)
+1. Firstly, **fork** the [cocmd-external-repo-template](https://github.com/cocmd/cocmd-external-repo-template)
 on your Git hosting of choice. Keep in mind that:
   * You can keep the fork private.
   * The template itself is not needed, it's just an easier way to get up to speed with the required structure.
@@ -203,7 +203,7 @@ name: "simple-package"
 title: "Simple Package"
 description: A simple package to show how to create your own one!
 version: 0.1.0
-author: Federico Terzi
+author: Moshe Roth
 ```
 
 ### Customizing the snippets
@@ -231,7 +231,7 @@ In our example, that could be something like:
 
 ```md title="README.md"
 This is a **simple package** and its purpose
-is to show how to create new Espanso packages!
+is to show how to create new Cocmd packages!
 ```
 
 ### Using the External repository

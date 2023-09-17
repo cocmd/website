@@ -3,10 +3,10 @@ sidebar_position: 1
 title: External Packages
 ---
 
-As mentioned in the previous section, **Espanso can install packages from multiple sources.**
-For most users, the official [Espanso Hub](https://hub.espanso.org/) should be the preferred way
+As mentioned in the previous section, **Cocmd can install packages from multiple sources.**
+For most users, the official [Cocmd Hub](https://hub.cocmd.org/) should be the preferred way
 to install new packages, as those have been verified by the 
-Espanso Team to guarantee quality and security standards.
+Cocmd Team to guarantee quality and security standards.
 
 That said, **there are times when you might want to install packages from outside the hub.**
 For example, you might want to create **private**, company-specific packages to share with 
@@ -15,7 +15,7 @@ your collegues, or simply you want to manage your packages intependently from th
 :::tip Call for package creators
 
 If you created a public package that could be useful to others, please consider
-submitting it to the [Espanso Hub](https://hub.espanso.org/). 
+submitting it to the [Cocmd Hub](https://hub.cocmd.org/). 
 Not only it's free, but it also greatly helps the project and the community! :)
 
 :::
@@ -36,11 +36,11 @@ As long as the repository follows the [Package Specification](../package-specifi
 you can install a package from any GitHub and GitLab repository
 by specifying the `--git` option.
 
-For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/espanso/dummy-repository),
+For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/cocmd/dummy-repository),
 we can run the following command in a terminal:
 
 ```bash
-espanso install dummy-package --git https://github.com/espanso/dummy-repository --external
+cocmd install dummy-package --git https://github.com/cocmd/dummy-repository --external
 ```
 
 ### Git repositories
@@ -54,17 +54,17 @@ by specifying the `--git` option.
 Compared to the previous section where we installed a package from GitHub or GitLab,
 **installing from a generic git repository requires the `git` command to being installed**.
 
-The `git` command is not needed on GitHub and GitLab because Espanso uses platform-specific
-APIs to download the packages. On the other hand, Espanso uses a `git clone` to fetch
+The `git` command is not needed on GitHub and GitLab because Cocmd uses platform-specific
+APIs to download the packages. On the other hand, Cocmd uses a `git clone` to fetch
 a package from other git repositories.
 
 :::
 
-For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/espanso/dummy-repository),
+For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/cocmd/dummy-repository),
 we can run the following command in a terminal:
 
 ```bash
-espanso install dummy-package --git https://github.com/espanso/dummy-repository --external
+cocmd install dummy-package --git https://github.com/cocmd/dummy-repository --external
 ```
 
 ## Private alternatives
@@ -82,20 +82,20 @@ by specifying the `--git` option.
 
 :::caution Setting up `git`
 
-With private repositories, Espanso currently relies on the `git` command to fetch the contents
+With private repositories, Cocmd currently relies on the `git` command to fetch the contents
 of a private package.
 For this reason, make sure the `git` command is installed on the machine (and properly added to the
 PATH) and that permissions are set up correctly.
 
 As a rule of thumb, **if you are able to run `git clone <your_repo_url>` on the machine,
-then Espanso should install the package correctly**.
+then Cocmd should install the package correctly**.
 
 :::
 
-For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/espanso/dummy-repository)
+For example, to install the `dummy-package` from our test [dummy-repository](https://github.com/cocmd/dummy-repository)
 (in this case, assuming the repository was private),
 we can run the following command in a terminal:
 
 ```bash
-espanso install dummy-package --git https://github.com/espanso/dummy-repository --external
+cocmd install dummy-package --git https://github.com/cocmd/dummy-repository --external
 ```

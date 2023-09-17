@@ -3,9 +3,9 @@ sidebar_position: 1
 title: App-specific configurations
 ---
 
-For simple use-cases, tuning Espanso's options in the `config/default.yml` file works well,
+For simple use-cases, tuning Cocmd's options in the `config/default.yml` file works well,
 but as your needs become more complex, that mechanism might prove limited.
-For example, you might want to customize the way Espanso behaves while using a certain 
+For example, you might want to customize the way Cocmd behaves while using a certain 
 app, or disabling it entirely when using another.
 
 App-specific configurations are designed to handle these use-cases. 
@@ -13,10 +13,10 @@ In a nutshell, they are made of two important ingredients:
 * Some rules that define when the configuration should be active
 * The actual configuration options
 
-### Disabling Espanso when using a certain app
+### Disabling Cocmd when using a certain app
 
 Let's start with a simple example. 
-Let's say we would like to disable Espanso while using Telegram. 
+Let's say we would like to disable Cocmd while using Telegram. 
 To do so, we'll create an app-specific configuration.
 Start by creating the `config/telegram.yml` file, with the following content:
 
@@ -33,9 +33,9 @@ In this case, the configuration will be active if the current app's
 executable path contains the string "Telegram". 
 You'll learn all about available filters in the [Filters section](#filters).
 
-* We then set `enable: false`, disabling Espanso.
+* We then set `enable: false`, disabling Cocmd.
 
-Espanso will now use the configuration defined in the `config/telegram.yml` file
+Cocmd will now use the configuration defined in the `config/telegram.yml` file
 while using Telegram and the default one while using other applications.
 
 Inside the app-specific configuration you can define most of the options you would customize
@@ -96,15 +96,15 @@ For example, if the current app title is `Google Chrome`:
 
 :::tip 
 
-The method described below requires Espanso v2.1.1 or above, so make sure to have an up-to-date version.
+The method described below requires Cocmd v2.1.1 or above, so make sure to have an up-to-date version.
 
 :::
 
 Now that we covered the basics, let's discuss how to choose the right
 filter for your use-case.
 
-We should start by checking what information Espanso is detecting for
-the current application, as that's what Espanso will use in the matching phase.
+We should start by checking what information Cocmd is detecting for
+the current application, as that's what Cocmd will use in the matching phase.
 
 1. Open the desired application (in this example, I've opened the macOS's TextEdit app).
 2. Inside the application, type `#detect#`
@@ -159,13 +159,13 @@ For example, if you are visiting YouTube inside Chrome, the `title` is either `Y
 or the video title.
 * Inside an editor, the `title` might refer to the file being edited.
 For example, while editing this documentation file inside Visual Studio Code, the
-detected title is `app-specific-configurations.md - website-espanso - Visual Studio Code`.
+detected title is `app-specific-configurations.md - website-cocmd - Visual Studio Code`.
 
 This opens up a few interesting use-cases. For example, you might create
 **an app-specific configuration that only activates when _visiting a particular website_**,
 or one that would only activate while editing a specific project/document.
 
-For example, here's a configuration that would disable Espanso when the active page is YouTube:
+For example, here's a configuration that would disable Cocmd when the active page is YouTube:
 
 ```yaml title="config/disable_on_youtube.yml"
 filter_title: YouTube

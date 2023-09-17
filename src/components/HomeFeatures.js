@@ -11,11 +11,18 @@ import {
   QrCodeIcon,
   ViewfinderCircleIcon,
   CommandLineIcon,
+  FlagIcon,
+  FireIcon,
+  PuzzlePieceIcon
 } from '@heroicons/react/24/outline';
 import Link from "@docusaurus/Link";
 import { useOS } from "../hooks/useOS";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useScreenSize } from "../hooks/useScreenSize";
+import Devs1 from '@site/static/img/devs1_2.png';
+import Devs2 from '@site/static/img/devs2_1.png';
+import Devs3 from '@site/static/img/devs3.png';
+
 
 export default function HomeFeatures() {
   const today = new Date().toLocaleDateString();
@@ -73,15 +80,16 @@ export default function HomeFeatures() {
 
 
       <Feature
+      reversed
         main={
           <div className={styles["feature-card"]}>
-            some text
+            <img src={Devs1} />
           </div>
         }
         description={
           <FeatureDescription
             title="Motivation: Efficiency!"
-            icon={<LightBulbIcon className={styles.icon} />}
+            icon={<FlagIcon className={styles.icon} />}
           >
             <p>
               
@@ -99,12 +107,16 @@ export default function HomeFeatures() {
         }
       />
       <Feature
-        reversed
-        main={<div className={styles["search-bar-image"]} />}
+        main={
+          <div className={styles["feature-card"]}>
+            <img src={Devs2} />
+          </div>
+        }
+        
         description={
           <FeatureDescription
             title="Vision: Gitops for CMD"
-            icon={<ViewColumnsIcon className={styles.icon} />}
+            icon={<FireIcon className={styles.icon} />}
           >
             <p>
               CoCMD is a community for CMD operations as code. 
@@ -116,36 +128,18 @@ export default function HomeFeatures() {
           </FeatureDescription>
         }
       />
+      
       <Feature
+        reversed
         main={
           <div className={styles["feature-card"]}>
-            some text
+            <img src={Devs3} />
           </div>
         }
         description={
           <FeatureDescription
-            title="Public and Private Repositories"
-            icon={<CalendarIcon className={styles.icon} />}
-          >
-            <p>
-              Create public repositories to share your scripts and aliases with
-              the community.
-              <br />
-              <br />
-              Create private repositories to share your scripts and aliases with
-              your team.
-
-            </p>
-          </FeatureDescription>
-        }
-      />
-      <Feature
-        reversed
-        main={<div className={styles["packages-image"]} />}
-        description={
-          <FeatureDescription
             title="Endless extensibility"
-            icon={<ShareIcon className={styles.icon} />}
+            icon={<PuzzlePieceIcon className={styles.icon} />}
           >
             <p>
               Extend the basic CoCMD functionality by installing packages.

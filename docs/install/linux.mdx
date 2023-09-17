@@ -11,7 +11,7 @@ import WaylandFinalSteps from "./linux/_wayland-final-steps.mdx";
 
 ## Find the right version
 
-To use Espanso on Linux, you first need to determine whether your system is running a X11 or Wayland desktop environment.
+To use Cocmd on Linux, you first need to determine whether your system is running a X11 or Wayland desktop environment.
 If you are unsure, please open a terminal and run the following command:
 
 ```bash
@@ -40,7 +40,7 @@ We are continously improving the installation process, so expect more user-frien
 
 ### Installing with DEB package (Ubuntu/Debian) {#deb-x11}
 
-Espanso ships with a `.deb` package, making the installation convenient on Debian-based systems.
+Cocmd ships with a `.deb` package, making the installation convenient on Debian-based systems.
 
 Start by downloading the package by running the following command inside a terminal:
 
@@ -51,14 +51,14 @@ export const DebX11CodeLink = () => <CodeBlock>wget {getStableDownloadLink("LINU
 :::info Verifying package checksum
 
 If you want to verify the correctness of the archive, in the Github Releases page you will find the SHA256 hash 
-in the file `espanso-debian-x11-amd64-sha256.txt`
+in the file `cocmd-debian-x11-amd64-sha256.txt`
 
 :::
 
 You can now install the package using:
 
 ```
-sudo apt install ./espanso-debian-x11-amd64.deb
+sudo apt install ./cocmd-debian-x11-amd64.deb
 ```
 
 <X11AfterInstall />
@@ -69,14 +69,14 @@ export const AppImageCodeLink= () => <CodeBlock className="language-bash">
 {`# Create the $HOME/opt destination folder
 mkdir -p ~/opt
 # Download the AppImage inside it
-wget -O ~/opt/Espanso.AppImage '${getStableDownloadLink("LINUX_X11_APP_IMAGE_DOWNLOAD_URL")}'
+wget -O ~/opt/Cocmd.AppImage '${getStableDownloadLink("LINUX_X11_APP_IMAGE_DOWNLOAD_URL")}'
 # Make it executable
-chmod u+x ~/opt/Espanso.AppImage
-# Create the "espanso" command alias
-sudo ~/opt/Espanso.AppImage env-path register
+chmod u+x ~/opt/Cocmd.AppImage
+# Create the "cocmd" command alias
+sudo ~/opt/Cocmd.AppImage env-path register
 `}</CodeBlock>;
 
-To install the Espanso's AppImage, open a terminal and follow these steps:
+To install the Cocmd's AppImage, open a terminal and follow these steps:
 
 <AppImageCodeLink/>
 
@@ -84,10 +84,10 @@ To install the Espanso's AppImage, open a terminal and follow these steps:
 
 ### Installing with Snap {#snap-x11}
 
-If you are using Ubuntu, you can also install Espanso by simply running this command:
+If you are using Ubuntu, you can also install Cocmd by simply running this command:
 
 ```bash
-sudo snap install espanso --classic --channel=latest/edge
+sudo snap install cocmd --classic --channel=latest/edge
 ```
 
 <X11AfterInstall />
@@ -96,7 +96,7 @@ sudo snap install espanso --classic --channel=latest/edge
 
 #### Prerequisites
 
-These are the basic tools required to build espanso:
+These are the basic tools required to build cocmd:
 
 * A recent Rust compiler. You can install it following these instructions: https://www.rust-lang.org/tools/install
 * A C/C++ compiler. On Linux, you should use the default C/C++ compiler (it's usually GCC). 
@@ -104,36 +104,36 @@ If you run the command specified in the next step, this will be included automat
 
 * Install the required linux packages:
   * On **Ubuntu/Debian** run `sudo apt update && sudo apt install build-essential git libx11-dev libxtst-dev libxkbcommon-dev libdbus-1-dev libwxgtk3.0-gtk3-dev libssl-dev`
-* Espanso heavily relies on [cargo make](https://github.com/sagiegurari/cargo-make) for the various packaging
+* Cocmd heavily relies on [cargo make](https://github.com/sagiegurari/cargo-make) for the various packaging
 steps. You can install it by running:
 
 ```
 cargo install --force cargo-make --version 0.34.0
 ```
 
-#### Compiling Espanso
+#### Compiling Cocmd
 
 Once you've got all the prerequisites, you can:
 
 ```bash
-# Clone the Espanso repository
-git clone https://github.com/federico-terzi/espanso
+# Clone the Cocmd repository
+git clone https://github.com/cocmd/cocmd
 
-cd espanso
+cd cocmd
 
-# Compile espanso in release mode
+# Compile cocmd in release mode
 # NOTE: this will take a while (~5/15 minutes)
 cargo make --profile release build-binary 
 ```
 
-At this point, you should have the `espanso` binary available in the `target/release/` directory.
+At this point, you should have the `cocmd` binary available in the `target/release/` directory.
 
-#### Installing Espanso
+#### Installing Cocmd
 
-Once you've compiled Espanso, you can move it into the final location. A good option would be the `/usr/local/bin` folder:
+Once you've compiled Cocmd, you can move it into the final location. A good option would be the `/usr/local/bin` folder:
 
 ```
-sudo mv target/release/espanso /usr/local/bin/espanso
+sudo mv target/release/cocmd /usr/local/bin/cocmd
 ```
 
 <X11AfterInstall />
@@ -146,18 +146,18 @@ sudo mv target/release/espanso /usr/local/bin/espanso
 > * If you are using a non-us keyboard layout, you'll need to explicitly specify it in the settings (more on this below).
 > * There is currently no support for App-specific configurations, which means we can't use patches
 > (which are often necessary to support some terminals).
-> * If you are using Gnome, Espanso causes a small "flicker" when using the clipboard backend. This does not happen
+> * If you are using Gnome, Cocmd causes a small "flicker" when using the clipboard backend. This does not happen
 > on Sway.
-> * If you connect a new keyboard, you will need to manually restart Espanso with `espanso restart`, otherwise
-> Espanso won't detect it.
+> * If you connect a new keyboard, you will need to manually restart Cocmd with `cocmd restart`, otherwise
+> Cocmd won't detect it.
 >
-> If you encounter a bug, please [open an issue on GitHub](https://github.com/federico-terzi/espanso/issues),
+> If you encounter a bug, please [open an issue on GitHub](https://github.com/cocmd/cocmd/issues),
 > any help is greatly appreciated! :)
 
 
 ### Installing with DEB package (Ubuntu/Debian) {#deb-wayland}
 
-Espanso ships with a `.deb` package, making the installation convenient on Debian-based systems.
+Cocmd ships with a `.deb` package, making the installation convenient on Debian-based systems.
 
 Start by downloading the package by running the following command inside a terminal:
 
@@ -168,14 +168,14 @@ export const DebWaylandCodeLink = () => <CodeBlock>wget {getStableDownloadLink("
 :::info Verifying package checksum
 
 If you want to verify the correctness of the archive, in the Github Releases page you will find the SHA256 hash 
-in the file `espanso-debian-wayland-amd64-sha256.txt`
+in the file `cocmd-debian-wayland-amd64-sha256.txt`
 
 :::
 
 You can now install the package using:
 
 ```
-sudo apt install ./espanso-debian-wayland-amd64.deb
+sudo apt install ./cocmd-debian-wayland-amd64.deb
 ```
 
 The process is almost complete, you just need to grant the required capabilities.
@@ -186,7 +186,7 @@ The process is almost complete, you just need to grant the required capabilities
 
 #### Prerequisites
 
-These are the basic tools required to build espanso:
+These are the basic tools required to build cocmd:
 
 * A recent Rust compiler. You can install it following these instructions: https://www.rust-lang.org/tools/install
 * A C/C++ compiler. On Linux, you should use the default C/C++ compiler (it's usually GCC). 
@@ -195,37 +195,37 @@ If you run the command specified in the next step, this will be included automat
 * Install the required linux packages:
   * On **Ubuntu/Debian** run `sudo apt update && sudo apt install build-essential git wl-clipboard libxkbcommon-dev libdbus-1-dev libwxgtk3.0-gtk3-dev libssl-dev`
   * On **Fedora** run `sudo dnf install @development-tools gcc-c++ wl-clipboard libxkbcommon-devel dbus-devel wxGTK3-devel`
-* Espanso heavily relies on [cargo make](https://github.com/sagiegurari/cargo-make) for the various packaging
+* Cocmd heavily relies on [cargo make](https://github.com/sagiegurari/cargo-make) for the various packaging
 steps. You can install it by running:
 
 ```
 cargo install --force cargo-make --version 0.34.0
 ```
 
-#### Compiling Espanso
+#### Compiling Cocmd
 
 Once you've got all the prerequisites, you can:
 
 ```bash
-# Clone the Espanso repository
-git clone https://github.com/federico-terzi/espanso
+# Clone the Cocmd repository
+git clone https://github.com/cocmd/cocmd
 
-cd espanso
+cd cocmd
 
-# Compile espanso in release mode
+# Compile cocmd in release mode
 # NOTE: this will take a while (~5/15 minutes)
 cargo make --profile release --env NO_X11=true build-binary 
 ```
 
-At this point, you should have the `espanso` binary available in the `target/release/` directory.
+At this point, you should have the `cocmd` binary available in the `target/release/` directory.
 
-#### Installing Espanso
+#### Installing Cocmd
 
-Once you've compiled Espanso, you can move it into the final location. 
+Once you've compiled Cocmd, you can move it into the final location. 
 A good option would be the `/usr/local/bin` folder:
 
 ```
-sudo mv target/release/espanso /usr/local/bin/espanso
+sudo mv target/release/cocmd /usr/local/bin/cocmd
 ```
 
 The process is almost complete, you just need to grant the required capabilities.

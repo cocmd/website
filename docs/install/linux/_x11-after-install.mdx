@@ -1,15 +1,15 @@
-From now on, you should have the `espanso` command available in the terminal (you can verify by running `espanso --version`).
+From now on, you should have the `cocmd` command available in the terminal (you can verify by running `cocmd --version`).
 
-At this point, you are ready to use espanso by registering it first as a Systemd service and then starting it with:
+At this point, you are ready to use cocmd by registering it first as a Systemd service and then starting it with:
 
 ```bash
-# Register espanso as a systemd service (required only once)
-espanso service register
+# Register cocmd as a systemd service (required only once)
+cocmd service register
 
-# Start espanso
-espanso start
+# Start cocmd
+cocmd start
 ```
 
-> If you don't want to use espanso as a Systemd service, you can also start it in unmanaged mode with `espanso start --unmanaged`. Keep in mind that Espanso will not start automatically when running in unmanaged mode, so you will need to do so manually.
+> If you don't want to use cocmd as a Systemd service, you can also start it in unmanaged mode with `cocmd start --unmanaged`. Keep in mind that Cocmd will not start automatically when running in unmanaged mode, so you will need to do so manually.
 
 You are now ready to read the [Getting Started](../../get-started) tutorial!

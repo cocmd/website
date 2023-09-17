@@ -5,7 +5,7 @@ title: Include and Exclude rules
 
 In the [App-specific configurations](../app-specific-configurations) section, we discussed
 a way to create configurations that change depending on the active application.
-These configurations let you tune the way Espanso interacts with specific applications
+These configurations let you tune the way Cocmd interacts with specific applications
 by providing a series of parameters.
 
 Among them you'll find the `include` and `exclude` rules,
@@ -44,12 +44,12 @@ matches:
 
 In the previous example, we prefixed the filename with an `_` underscore.
 As explained in the [Organizing matches](../../matches/organizing-matches)
-section, Espanso automatically loads all YAML files located in the `match` directory,
+section, Cocmd automatically loads all YAML files located in the `match` directory,
 **except the ones starting with an `_` underscore.**
 
 Therefore, we prefix the `_email.yml` filename with an underscore to
-prevent Espanso from loading that YAML file automatically.
-If we hadn't done so, Espanso would enable the `email.yml` file for
+prevent Cocmd from loading that YAML file automatically.
+If we hadn't done so, Cocmd would enable the `email.yml` file for
 all applications. Instead, we want to enable it only on Chrome and Firefox.
 
 :::
@@ -110,7 +110,7 @@ extra_excludes:
 ```
 
 In this example, we defined the `extra_excludes` rule, specifying a glob pattern for the `all-emojis` package.
-With this rule, Espanso will **exclude all files defined inside the `all-emojis` package when using Telegram.**
+With this rule, Cocmd will **exclude all files defined inside the `all-emojis` package when using Telegram.**
 
 Keep in mind that you are not limited to packages, you can use the `excludes` rules with all match files:
 
