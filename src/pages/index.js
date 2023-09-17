@@ -68,8 +68,9 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
+    
     <Layout
-      title={`${siteConfig.title}`}
+      title="Home"
       description="community for bash aliases, scripts and automations">
       {/* <HomepageHeader /> */}
       {/* <HeroFeatures/> */}
@@ -82,13 +83,13 @@ export default function Home() {
           </Link>
       </div> */}
 
-      <main>
+      
 
       <HomeJumbo />
       <HomeFeatures />
 
       <TechnologiesSection />
-      </main>
+      
       {/* <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by HAJICON - Flaticon</a> */}
     </Layout>
   );

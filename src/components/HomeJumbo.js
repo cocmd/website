@@ -26,8 +26,9 @@ const particlesLoaded = useCallback(async container => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.particles}>
      <Particles
-            id="tsparticles"
+            
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
@@ -36,7 +37,7 @@ const particlesLoaded = useCallback(async container => {
                 //         value: "#0d47a1",
                 //     },
                 // },
-                fpsLimit: 30,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         onClick: {
@@ -76,8 +77,8 @@ const particlesLoaded = useCallback(async container => {
                         outModes: {
                             default: "bounce",
                         },
-                        random: false,
-                        speed: 2,
+                        random: true,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
@@ -100,17 +101,18 @@ const particlesLoaded = useCallback(async container => {
                 detectRetina: true,
             }}
         />
+      </div>
       <div className={styles["content"]}>
         <div className={styles.headline}>
-          CMD knowledge as code
+          CMD-Ops As Code
         </div>
         <Fade bottom delay={300}>
           <p className={styles.subtitle}>
-            <b>Tired of typing the same sentences</b> over and over? <br />
-            Discover the incredible power of a full-blown text expander.
+            Share <b>CMD Operations </b> easily<br/>
+            right in your project codebase<br/>
           </p>
         </Fade>
-        <Fade bottom delay={700}>
+        <Fade bottom delay={50}>
           <div className={styles["get-started-button"]}>
             <InstallButton />
           </div>

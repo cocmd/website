@@ -3,17 +3,15 @@ import styles from "./HomeFeatures.module.css";
 import Fade from "react-reveal/Fade";
 import {
   LightBulbIcon,
-  SearchIcon,
+  ViewColumnsIcon,
   CalendarIcon,
   ShareIcon,
-  ChipIcon,
-  TerminalIcon,
-  TemplateIcon,
-  DesktopComputerIcon,
+  CpuChipIcon,
   DocumentDuplicateIcon,
-  CodeIcon,
-  ViewGridIcon,
-} from "@heroicons/react/outline";
+  QrCodeIcon,
+  ViewfinderCircleIcon,
+  CommandLineIcon,
+} from '@heroicons/react/24/outline';
 import Link from "@docusaurus/Link";
 import { useOS } from "../hooks/useOS";
 import BrowserOnly from "@docusaurus/BrowserOnly";
@@ -27,6 +25,53 @@ export default function HomeFeatures() {
 
   return (
     <div className={styles.container}>
+
+  
+        <div className={styles.heading}>
+        <h2>What can you build with CoCMD?</h2>
+      </div>
+    <div className={styles["more-features-container"]} >
+       
+        <SmallFeature
+          title="Scripts & Aliases"
+          icon={
+            <CommandLineIcon className={styles["small-feature-icon"]} />
+          }
+        >
+          <p>
+          
+          Write and Share useful scripts and aliases for your terminal.
+
+
+          </p>
+        </SmallFeature>
+        <SmallFeature
+          title="Workflows"
+          icon={
+            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
+          }
+          delay={100}
+        >
+          <p>
+            Create Day-to-day workflows and share them with your team.
+            Oncall procedures, incident response, etc.
+          </p>
+        </SmallFeature>
+        <SmallFeature
+          title="Setup & Onboarding"
+          icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
+          delay={200}
+        >
+          <p>
+            Don't let your documentation get out of date.
+            Write and maintain your setup and onboarding procedures as code.
+            
+          </p>
+        </SmallFeature>
+        
+      </div>
+
+
       <Feature
         main={
           <div className={styles["feature-card"]}>
@@ -35,17 +80,20 @@ export default function HomeFeatures() {
         }
         description={
           <FeatureDescription
-            title="Smarter typing"
+            title="Motivation: Efficiency!"
             icon={<LightBulbIcon className={styles.icon} />}
           >
             <p>
-              No more copy and pasting, create{" "}
-              <span className={styles.highlight}>templates</span> once and let
-              Espanso do the rest for you.
-              <br />
-              <br />
-              Customer support replies, sales pitches, medical reports, you name
-              it. Espanso got you covered.
+              
+              <ul>
+              <li>No more asking teammates for the right command</li>
+              <li>No more outdated documentation</li>
+              <li>No more sending scripts over Slack</li>
+              </ul>
+              Use CoCMD to write and share your scripts, workflows and aliases as code.
+
+
+
             </p>
           </FeatureDescription>
         }
@@ -55,18 +103,15 @@ export default function HomeFeatures() {
         main={<div className={styles["search-bar-image"]} />}
         description={
           <FeatureDescription
-            title="Every sentence, one search away"
-            icon={<SearchIcon className={styles.icon} />}
+            title="Vision: Gitops for CMD"
+            icon={<ViewColumnsIcon className={styles.icon} />}
           >
             <p>
-              Don’t remember a shortcut? No worries.
+              CoCMD is a community for CMD operations as code. 
               <br />
-              <br /> Just press{" "}
-              <BrowserOnly fallback={<>ALT+Space</>}>
-                {() => <SearchShortcut />}
-              </BrowserOnly>{" "}
-              and Espanso’s <span className={styles.highlight}>search bar</span>{" "}
-              will open, letting you search for the perfect snippet.
+              <br />
+              We believe that CMD operations should be treated as code, and that
+              the best way to share them is by using Git.
             </p>
           </FeatureDescription>
         }
@@ -79,17 +124,17 @@ export default function HomeFeatures() {
         }
         description={
           <FeatureDescription
-            title="Dates, Emojis 🚀, and more... "
+            title="Public and Private Repositories"
             icon={<CalendarIcon className={styles.icon} />}
           >
             <p>
-              Don’t wrap your head around{" "}
-              <span className={styles.highlight}>dates</span>. Espanso makes it
-              easy to use them, both past and future ones.
+              Create public repositories to share your scripts and aliases with
+              the community.
               <br />
               <br />
-              Bring <span className={styles.highlight}>emojis</span> 🤠 in all
-              your favorite apps, one shortcut away.
+              Create private repositories to share your scripts and aliases with
+              your team.
+
             </p>
           </FeatureDescription>
         }
@@ -103,108 +148,16 @@ export default function HomeFeatures() {
             icon={<ShareIcon className={styles.icon} />}
           >
             <p>
-              Extend Espanso’s capabilities with{" "}
-              <span className={styles.highlight}>packages</span>, or create your
-              owns and share them with the community on the{" "}
-              <Link to="https://hub.espanso.org">Espanso Hub</Link>.
+              Extend the basic CoCMD functionality by installing packages.
               <br />
               <br />
-              Need to insert mathematical notation? Or perhaps german accents?
-              We got a package for them.
-              <br />
-              <br /> We even got the shrug ¯\_(ツ)_/¯
+              Packages can be used to add new commands, new triggers, new
+              variables and more.
             </p>
           </FeatureDescription>
         }
       />
-      <div className={styles.heading}>
-        <ChipIcon className={styles.icon} />
-        <h2>Advanced features</h2>
-      </div>
-      <Feature
-        main={
-          <div className={styles["feature-card"]}>
-            some text
-          </div>
-        }
-        description={
-          <FeatureDescription
-            title="Shell and Script support"
-            icon={<TerminalIcon className={styles.icon} />}
-          >
-            <p>
-              For advanced use-cases, you can extend Espanso’s snippets with{" "}
-              <span className={styles.highlight}>shell</span> commands or{" "}
-              <span className={styles.highlight}>custom scripts</span>.
-              <br />
-              <br />
-              No more copy-pasting from the terminal, inject the output into
-              applications directly.
-            </p>
-          </FeatureDescription>
-        }
-      />
-      <Feature
-        reversed
-        main={<div className={styles["form-image"]} />}
-        description={
-          <FeatureDescription
-            title="Form support"
-            icon={<TemplateIcon className={styles.icon} />}
-          >
-            <p>
-              Use <span className={styles.highlight}>forms</span> to handle
-              complex workflows, creating templates that can be reused with
-              ease.
-              <br />
-              <br />
-              You can even forward form values into custom scripts, opening up
-              endless possibilities.
-            </p>
-          </FeatureDescription>
-        }
-      />
-      <h3>And also</h3>
-
-      <div className={styles["more-features-container"]}>
-        <SmallFeature
-          title="System-wide integration"
-          icon={
-            <DesktopComputerIcon className={styles["small-feature-icon"]} />
-          }
-        >
-          <p>
-            Espanso works with most applications, so you can boost your
-            productivity everywhere.
-          </p>
-        </SmallFeature>
-        <SmallFeature
-          title="File-based configuration"
-          icon={
-            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
-          }
-          delay={100}
-        >
-          <p>
-            Espanso follows a Unix-like configuration philosophy, using simple
-            files. Though a GUI is planned in the future.
-          </p>
-        </SmallFeature>
-        <SmallFeature
-          title="Open-source license"
-          icon={<CodeIcon className={styles["small-feature-icon"]} />}
-          delay={200}
-        >
-          <p>Espanso is open-source, licensed under the GPL-3 license.</p>
-        </SmallFeature>
-        <SmallFeature
-          title="Cross-platform support"
-          icon={<ViewGridIcon className={styles["small-feature-icon"]} />}
-          delay={300}
-        >
-          <p>Espanso supports Windows, Linux and macOS.</p>
-        </SmallFeature>
-      </div>
+      
     </div>
   );
 }

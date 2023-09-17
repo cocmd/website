@@ -18,7 +18,7 @@ function InstallButton() {
       case "mac":
         return {
           link: "/docs/install/mac",
-          text: "Get Started on macOS",
+          text: "Get Started on MacOS",
           subtitle: "Also available on Windows and Linux",
         };
       case "win":
@@ -38,10 +38,8 @@ function InstallButton() {
 
   return (
     <div className={styles.container}>
-      <Link to={link}>
-        <div className={styles.button}>
+      <Link to={link} className="button button--primary button--lg">
           <span>{text}</span>
-        </div>
       </Link>
       <Link className={styles.subtitle} to="/install">
         {subtitle}

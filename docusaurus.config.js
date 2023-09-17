@@ -95,6 +95,12 @@ const config = {
         },
         items: [
           {
+            to: '/install',
+            sidebarId: 'installSidebar',
+            position: 'left',
+            label: 'Install',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',

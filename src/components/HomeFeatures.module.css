@@ -6,8 +6,16 @@
   text-align: center;
 
   color: var(--content-primary);
-  max-width: 1224px;
+  max-width: 900px;
   margin: auto;
+}
+
+
+.subtitle {
+  padding-top: 3vh;
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 600;
 }
 
 .container h3 {
@@ -55,8 +63,8 @@
 .feature {
   display: flex;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .reversed {
@@ -111,6 +119,7 @@
 .more-features-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10vh;
 }
 
 .small-feature {
@@ -127,7 +136,8 @@
 
 .small-feature-icon {
   color: var(--accent);
-  width: 120px;
+  width: 90px;
+  margin-bottom: 20px;
 }
 
 .small-feature-icon > path {

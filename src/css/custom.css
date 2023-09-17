@@ -6,5 +6,9 @@
   --ifm-color-primary-light: #af84ff;
   --ifm-color-primary-lighter: #ba96ff;
   --ifm-color-primary-lightest: #ddcbff;
+
   
+  --windows-url: url(/img/windows-light.svg);
+  --macos-url: url(/img/apple-light.svg);
+  --linux-url: url(/img/linux-light.svg);
 }
