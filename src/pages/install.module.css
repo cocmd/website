@@ -1,0 +1,83 @@
+.container {
+  color: var(--content-primary);
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.install-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.targets {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.target {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.target span {
+  color: var(--content-secondary);
+}
+
+.target h3 {
+  text-align: center;
+}
+
+.windows {
+  background-image: var(--windows-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.macos {
+  background-image: var(--macos-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.linux {
+  background-image: var(--linux-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.button {
+  
+}
+
+.button:hover {
+}
