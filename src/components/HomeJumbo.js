@@ -104,12 +104,16 @@ const particlesLoaded = useCallback(async container => {
       </div>
       <div className={styles["content"]}>
         <div className={styles.headline}>
-          CMD-Ops As Code
+        {/* Add <span className={styles.highlight}>CMDOps</span> to Your Code Projects */}
+        <div>Distributed</div>
+        <div className={styles.highlight}>CMD Operations</div> <div>for Code Projects</div>
         </div>
         <Fade bottom delay={300}>
           <p className={styles.subtitle}>
-            Share <b>CMD Operations </b> easily<br/>
-            right in your project codebase<br/>
+            
+            {/* Introducing <b>CMDOps</b> — <br/>effortless script sharing, streamlined workflows, and code-based setup */}
+            Use <i>YAML</i> to describe actions, shortcuts etc in your codebase.
+            <br/>CoCMD takes care that developers can use them in their <b>Command Line</b>.
           </p>
         </Fade>
         <Fade bottom delay={50}>

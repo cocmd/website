@@ -35,7 +35,7 @@ export default function HomeFeatures() {
 
   
         <div className={styles.heading}>
-        <h2>What can you build with CoCMD?</h2>
+        <h2>What can you build?</h2>
       </div>
     <div className={styles["more-features-container"]} >
        
@@ -65,7 +65,7 @@ export default function HomeFeatures() {
           </p>
         </SmallFeature>
         <SmallFeature
-          title="Setup & Onboarding"
+          title="Onboarding & Setup"
           icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
           delay={200}
         >
@@ -92,16 +92,13 @@ export default function HomeFeatures() {
             icon={<FlagIcon className={styles.icon} />}
           >
             <p>
-              
+              Use CoCMD to distribute CMD operations as code.
+
               <ul>
               <li>No more asking teammates for the right command</li>
               <li>No more outdated documentation</li>
               <li>No more sending scripts over Slack</li>
               </ul>
-              Use CoCMD to write and share your scripts, workflows and aliases as code.
-
-
-
             </p>
           </FeatureDescription>
         }
@@ -115,42 +112,20 @@ export default function HomeFeatures() {
         
         description={
           <FeatureDescription
-            title="Vision: Gitops for CMD"
+            title="Vision: 10x Dev Experience"
             icon={<FireIcon className={styles.icon} />}
           >
             <p>
-              CoCMD is a community for CMD operations as code. 
-              <br />
-              <br />
-              We believe that CMD operations should be treated as code, and that
-              the best way to share them is by using Git.
+              <ul>
+              <li><u>Community Projects:</u> Add your own CMD operations as Opensource. don't let people reinvent the wheel.</li>
+              
+              <li><u>Teams and Enterprises:</u> Use Git for internal projects and share CMD operations with your team.</li>
+              </ul>
             </p>
           </FeatureDescription>
         }
       />
       
-      <Feature
-        reversed
-        main={
-          <div className={styles["feature-card"]}>
-            <img src={Devs3} />
-          </div>
-        }
-        description={
-          <FeatureDescription
-            title="Endless extensibility"
-            icon={<PuzzlePieceIcon className={styles.icon} />}
-          >
-            <p>
-              Extend the basic CoCMD functionality by installing packages.
-              <br />
-              <br />
-              Packages can be used to add new commands, new triggers, new
-              variables and more.
-            </p>
-          </FeatureDescription>
-        }
-      />
       
     </div>
   );
