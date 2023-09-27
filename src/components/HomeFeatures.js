@@ -19,7 +19,7 @@ import Link from "@docusaurus/Link";
 import { useOS } from "../hooks/useOS";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useScreenSize } from "../hooks/useScreenSize";
-import Devs1 from '@site/static/img/devs1_2.png';
+import Devs1 from '@site/static/img/dev_crazy.jpg';
 import Devs2 from '@site/static/img/devs2_1.png';
 import Devs3 from '@site/static/img/devs3.png';
 
