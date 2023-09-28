@@ -22,7 +22,7 @@ visit this link for more options: [MacOS installation](/docs/install/mac)
 * Linux - not supported yet
 * Windows - not supported yet
 
-## Add public CMD capabilities
+## Install CMDOps from Hub
 
 CoCMD provides a useful packages you can use right away.
 It's all public and open sourced.
@@ -34,7 +34,7 @@ cocmd install -y git docker k8s osx python node
 
 Visit [Hub](/docs/hub/packages) for more information.
 
-## Create private CMDOps
+## Create CMDOps in your codebase
 
 You can create your own CMDOps and share them with your team or community.
 Use Git to manage your CMDOps and CoCMD to distribute them.

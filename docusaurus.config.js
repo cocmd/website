@@ -95,10 +95,16 @@ const config = {
         },
         items: [
           {
-            to: '/install',
+            to: '/docs/intro',
             sidebarId: 'installSidebar',
             position: 'left',
-            label: 'Install',
+            label: 'Getting Started',
+          },
+          {
+            to: '/docs/showcases',
+            sidebarId: 'installSidebar',
+            position: 'left',
+            label: 'Showcase',
           },
           {
             type: 'docSidebar',

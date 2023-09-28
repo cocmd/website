@@ -46,4 +46,12 @@
   .create-own{
     margin: 10%;
   }
+
+
+.highlight {
+  color: var(--ifm-color-primary);
+  font-weight: bold; /* Make the text bold */
+  text-decoration: underline; /* Add an underline */
+  text-decoration-thickness: 10px; /* Specify the thickness (adjust the value as needed) */
+}
   

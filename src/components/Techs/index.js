@@ -21,7 +21,11 @@ function TechnologiesSection() {
 
   return (
     <div className="technologies-section">
-      <h2>Get Shortcuts and Scripts <br/>for 800+ Technologies</h2>
+      <h2 className="highlight">CoCMD-HUB 
+      </h2>
+      <h2>
+        contains hundreds of public Operations for you
+      </h2>
       <ul>
         {technologies.map((tech, index) => (
           <li key={index}>

@@ -93,11 +93,12 @@ export default function HomeFeatures() {
           >
             <p>
               Use CoCMD to distribute CMD operations as code.
-
-              <ul>
-              <li>No more asking teammates for the right command</li>
-              <li>No more outdated documentation</li>
+            
+              <ul style={{marginTop: "50px"}}>
               <li>No more sending scripts over Slack</li>
+              <li>No more outdated documentation for "cmd instructions"</li>
+              <li>Project onboarding like a pro</li>
+              <li>Full dev team collaboration 💪</li>
               </ul>
             </p>
           </FeatureDescription>
