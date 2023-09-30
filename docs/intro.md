@@ -1,5 +1,7 @@
 ---
 sidebar_position: 0
+slug: /intro
+
 ---
 
 # Getting Started
@@ -11,66 +13,31 @@ For example, lets say you have a lot of `git` commands you type in during the da
 
 ## Installation
 
+### Step 1 - Install CoCMD
 * MacOs - 
 Best way to install is with brew:
 ```shell
 brew tap cocmd/cocmd
 brew install cocmd
 ```
-visit this link for more options: [MacOS installation](/docs/install/mac)
 
 * Linux - not supported yet
 * Windows - not supported yet
 
-## Install CMDOps from Hub
+### Step 2 - Add CoCMD to your shell
 
-CoCMD provides a useful packages you can use right away.
-It's all public and open sourced.
-
-For example, you can add the basic dev machine packages with:
+Run in terminal:
 ```shell
-cocmd install -y git docker k8s osx python node
+cocmd setup zsh
+or 
+cocmd setup bash
 ```
 
-Visit [Hub](/docs/hub/packages) for more information.
+what this does is adding a loader of all aliases and automations shortcuts to your shell and lets you call any of them directly.
 
-## Create CMDOps in your codebase
+## Install CMDOps
 
-You can create your own CMDOps and share them with your team or community.
-Use Git to manage your CMDOps and CoCMD to distribute them.
+You can start right away with `cocmd install`.
+See all packages options in [Hub](/docs/packages/from_hub).
 
-Use our template to get started: [Template](https://github.com/cocmd/example-repo-template):
-```shell
-git clone git@github.com:cocmd/example-repo-template.git
-```
-
-change `cocmd.yaml` to your needs:
-* aliases - add your aliases as one big string
-* paths - add paths in the repo to be added to the PATH environment variable
-* automations - add workflows to be executed by CoCMD
-
-```yaml
-name: example-repo
-aliases: |
-    alias coolalias='echo "hi from coolalias"'
-    alias coolalias2='echo "hi from coolalias"'
-paths:
-    - ./bin/
-automations: 
-    - name: automation-inline-example
-      content: 
-        description: Automation example inline in cocmd.yaml
-        steps:
-        - content: |
-            echo "hi from inline automation step 1"
-          description: this is step 1
-          runner: shell
-          title: step 1
-        - content: |
-            echo "hi from inline automation step 2"
-          description: this is step 2
-          runner: shell
-          title: step 2
-    - name: automation-file-example
-      file: ./automation-file-example.yaml
-```
+If you want to create your own read [Here](/docs/packages/package-specification)

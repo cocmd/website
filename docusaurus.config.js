@@ -101,7 +101,13 @@ const config = {
             label: 'Getting Started',
           },
           {
-            to: '/docs/showcases',
+            to: '/docs/packages/from_hub/',
+            sidebarId: 'hubSidebar',
+            position: 'left',
+            label: 'Hub',
+          },
+          {
+            to: 'docs/category/showcase',
             sidebarId: 'installSidebar',
             position: 'left',
             label: 'Showcase',
@@ -114,7 +120,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/cocmd/cocmd',
+            href: 'https://github.com/cocmd',
             label: 'GitHub',
             position: 'left',
           },
