@@ -132,3 +132,14 @@ Then, the new hire will run the following command:
 ```shell
 cocmd run new-hire.onboarding
 ```
+
+
+
+:::info How is that better from writing plain scripts / documentation? 
+
+- Using CoCMD, you can easily share your routines with your team. 
+- The Command line will get updated automatically when you update the package.
+- Less work for you to explain where to get information.
+
+:::
+
