@@ -35,7 +35,7 @@ cocmd setup bash
 
 what this does is adding a loader of all aliases and automations shortcuts to your shell and lets you call any of them directly.
 
-## Install CMDOps
+## Add Packages
 
 You can start right away with `cocmd install`.
 See all packages options in [Hub](/docs/packages/from_hub).
