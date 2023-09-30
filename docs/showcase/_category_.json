@@ -1,0 +1,9 @@
+{
+  "label": "Showcase",
+  "position": 2,
+  "slug": "showcase",
+  "link": {
+    "type": "generated-index",
+    "title": "Showcase"
+  }
+}

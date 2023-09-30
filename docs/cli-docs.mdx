@@ -1,0 +1,172 @@
+---
+sidebar_position: 3
+
+
+---
+# Cli Help
+
+
+This document contains the help content for the `cocmd` command-line program.
+
+**Command Overview:**
+
+* [`cocmd`↴](#cocmd)
+* [`cocmd profile-loader`↴](#cocmd-profile-loader)
+* [`cocmd refresh`↴](#cocmd-refresh)
+* [`cocmd docs`↴](#cocmd-docs)
+* [`cocmd run`↴](#cocmd-run)
+* [`cocmd show`↴](#cocmd-show)
+* [`cocmd show package`↴](#cocmd-show-package)
+* [`cocmd show packages`↴](#cocmd-show-packages)
+* [`cocmd install`↴](#cocmd-install)
+* [`cocmd remove`↴](#cocmd-remove)
+* [`cocmd setup`↴](#cocmd-setup)
+
+## `cocmd`
+
+
+    Cocmd is a CLI utility to collaborate on anything in the CMD in the community and internal teams. 
+    Use it to sync Aliases, Scripts, and Workflows.
+
+**Usage:** `cocmd [OPTIONS] <COMMAND>`
+
+###### **Subcommands:**
+
+* `profile-loader` — Profile Loader command - Loads profiles
+* `refresh` — Refresh command - Refreshes something (add a description here)
+* `docs` — Docs command with a name argument - Generates and displays documentation
+* `run` — Run command with a name argument - Runs a specific automation
+* `show` — Show command with subcommands
+* `install` — Install command with subcommands
+* `remove` — Remove command (no subcommands) - Removes something (add a description here)
+* `setup` — Setup command with a shell argument - Set up the CLI tool, specify shell
+
+###### **Options:**
+
+* `-v`, `--verbose` — Verbose flag for extra output
+
+
+
+## `cocmd profile-loader`
+
+Profile Loader command - Loads profiles
+
+**Usage:** `cocmd profile-loader`
+
+
+
+## `cocmd refresh`
+
+Refresh command - Refreshes something (add a description here)
+
+**Usage:** `cocmd refresh`
+
+
+
+## `cocmd docs`
+
+Docs command with a name argument - Generates and displays documentation
+
+**Usage:** `cocmd docs [OPTIONS] [NAME]`
+
+###### **Arguments:**
+
+* `<NAME>` — Optional name argument for specific documentation generation
+
+###### **Options:**
+
+* `-r`, `--raw-markdown` — Optional flag to show raw markdown
+
+  Default value: `false`
+
+
+
+## `cocmd run`
+
+Run command with a name argument - Runs a specific automation
+
+**Usage:** `cocmd run [NAME]`
+
+###### **Arguments:**
+
+* `<NAME>` — Optional name argument for specifying which automation to run
+
+
+
+## `cocmd show`
+
+Show command with subcommands
+
+**Usage:** `cocmd show <COMMAND>`
+
+###### **Subcommands:**
+
+* `package` — Package subcommand with a 'name' argument - Shows information about a specific package
+* `packages` — Packages subcommand - Shows information about all packages
+
+
+
+## `cocmd show package`
+
+Package subcommand with a 'name' argument - Shows information about a specific package
+
+**Usage:** `cocmd show package <NAME>`
+
+###### **Arguments:**
+
+* `<NAME>` — Name argument for 'show package' subcommand - Specifies the name of the package to show
+
+
+
+## `cocmd show packages`
+
+Packages subcommand - Shows information about all packages
+
+**Usage:** `cocmd show packages`
+
+
+
+## `cocmd install`
+
+Install command with subcommands
+
+**Usage:** `cocmd install [OPTIONS] [NAMES]...`
+
+###### **Arguments:**
+
+* `<NAMES>` — Name argument for 'install' - Specifies the name of the package to add
+
+###### **Options:**
+
+* `-y`, `--yes`
+
+  Default value: `false`
+
+
+
+## `cocmd remove`
+
+Remove command (no subcommands) - Removes something (add a description here)
+
+**Usage:** `cocmd remove`
+
+
+
+## `cocmd setup`
+
+Setup command with a shell argument - Set up the CLI tool, specify shell
+
+**Usage:** `cocmd setup [OPTIONS]`
+
+###### **Options:**
+
+* `-s`, `--shell <SHELL>` — Optional shell argument for 'setup' command - Specifies the shell to set up
+
+
+
+<hr/>
+
+<small><i>
+    This document was generated automatically by
+    <a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
+</i></small>
