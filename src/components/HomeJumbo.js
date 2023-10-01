@@ -106,7 +106,7 @@ const particlesLoaded = useCallback(async container => {
         <div className={styles.headline}>
         {/* Add <span className={styles.highlight}>CMDOps</span> to Your Code Projects */}
         <div>Distributed</div>
-        <div className={styles.highlight}>Command Line Operations</div> <div>for Code Projects</div>
+        <div className={styles.highlight}>Command Line Operations</div> <div>for Dev Teams</div>
         </div>
         <Fade bottom delay={300}>
           <p className={styles.subtitle}>
