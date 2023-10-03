@@ -6,7 +6,7 @@ run in terminal:
 cocmd install -y osx
 ```
 :::
-## automations
+## automations (1)
 | name | env | description | steps |
 | --- | --- | --- | --- |
 | setup-dev-common | Any | Setup common development tools on macOS | 8 |

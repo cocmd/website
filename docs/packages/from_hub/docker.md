@@ -6,7 +6,7 @@ run in terminal:
 cocmd install -y docker
 ```
 :::
-## aliases
+## aliases (14):
 ```
 alias d='docker'
 alias da='docker attach'
@@ -23,7 +23,7 @@ alias dcerjasmine='docker-compose run --rm -e RAILS_ENV=test -p 8888:3000 rails 
 alias dcerspec='docker-compose run --rm -e RAILS_ENV=test rails rspec'
 
 ```
-## automations
+## automations (4)
 | name | env | description | steps |
 | --- | --- | --- | --- |
 | setup | MacOS | setup docker for desktop | 3 |
@@ -32,7 +32,9 @@ alias dcerspec='docker-compose run --rm -e RAILS_ENV=test rails rspec'
 | monitor | Any | Monitor Docker resources | 1 |
 | build-run | MacOS | Build and run a Docker image | 1 |
 
-## paths
-### ./scripts
-  - dockerinstall.osx.sh
+## paths (2)
+./scripts/:
+| filename | desc | usage 
+| --- | --- | --- |
+| dockerinstall.osx.sh |  |  |
 

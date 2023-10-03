@@ -6,7 +6,7 @@ run in terminal:
 cocmd install -y k8s
 ```
 :::
-## aliases
+## aliases (14):
 ```
 alias k='kubectl'
 alias kgp='kubectl get pods'
@@ -23,7 +23,7 @@ alias kctx='kubectx'
 alias kns='kubens'
 
 ```
-## automations
+## automations (4)
 | name | env | description | steps |
 | --- | --- | --- | --- |
 | setup | MacOS | setup Kubernetes for desktop | 4 |

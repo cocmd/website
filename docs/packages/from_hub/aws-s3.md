@@ -6,7 +6,7 @@ run in terminal:
 cocmd install -y aws-s3
 ```
 :::
-## aliases
+## aliases (7):
 ```
 alias aws='aws'
 alias s3ls='aws s3 ls'
@@ -16,7 +16,7 @@ alias s3rm='aws s3 rm'
 alias s3sync='aws s3 sync'
 
 ```
-## automations
+## automations (4)
 | name | env | description | steps |
 | --- | --- | --- | --- |
 | s3-upload | Any | Upload a file to an S3 bucket | 1 |

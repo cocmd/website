@@ -6,7 +6,9 @@ run in terminal:
 cocmd install -y devops
 ```
 :::
-## paths
-### /Users/mosher/workspace/cocmd-hub/packages/devops/bin
-  - jenkins-run.sh
+## paths (1)
+./bin/:
+| filename | desc | usage 
+| --- | --- | --- |
+| jenkins-run.sh |  |  |
 
