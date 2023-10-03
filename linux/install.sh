@@ -3,7 +3,7 @@
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.0"  # Replace with the desired release tag
+RELEASE_TAG="v1.0.8"
 DEB_PACKAGE_NAME="cocmd-debian-x11-amd64.deb"
 
 # Download the .deb package from the GitHub release
@@ -15,7 +15,10 @@ sudo dpkg -i ${DEB_PACKAGE_NAME}
 # Install any missing dependencies (if needed)
 sudo apt-get -f install
 
+
 # Clean up the downloaded .deb file
 rm ${DEB_PACKAGE_NAME}
 
 echo "Cocmd has been successfully installed!"
+
+cocmd setup
