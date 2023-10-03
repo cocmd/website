@@ -14,14 +14,19 @@ For example, lets say you have a lot of `git` commands you type in during the da
 ## Installation
 
 ### Step 1 - Install CoCMD
-* MacOs - 
+* MacOs
 Best way to install is with brew:
 ```shell
 brew tap cocmd/cocmd
 brew install cocmd
 ```
 
-* Linux - not supported yet
+* Linux
+Install with apt:
+```shell
+bash -c "$(curl -fsSL https://cocmd.org/linux/install.sh)"
+```
+
 * Windows - not supported yet
 
 ### Step 2 - Add CoCMD to your shell
