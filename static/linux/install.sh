@@ -3,7 +3,7 @@
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.2.3.4"
+RELEASE_TAG="v1.0.33"
 DEB_PACKAGE_NAME="cocmd-debian-x11-amd64.deb"
 
 # Install libssl1.1 (if needed)
