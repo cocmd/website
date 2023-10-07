@@ -3,29 +3,57 @@
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.0.39"
-DEB_PACKAGE_NAME="cocmd-linux.tar.gz"
+RELEASE_TAG="v1.0.33"
 
-# Install libssl1.1 (if needed)
+# Determine host architecture
+HOST_ARCH=$(uname -m)
 
-sudo apt-get update
-sudo apt-get install -y libssl-dev
+# Define the download URL based on the host architecture
+case "$HOST_ARCH" in
+    x86_64)
+        TARGET="x86_64-unknown-linux-gnu"
+        ;;
+    i686)
+        TARGET="i686-unknown-linux-gnu"
+        ;;
+    aarch64)
+        TARGET="aarch64-unknown-linux-gnu"
+        ;;
+    armv7l)
+        TARGET="armv7-unknown-linux-gnueabihf"
+        ;;
+    arm)
+        TARGET="arm-unknown-linux-gnueabi"
+        ;;
+    *)
+        echo "Unsupported architecture: $HOST_ARCH"
+        exit 1
+        ;;
+esac
 
+# Download the appropriate binary
+BINARY_NAME="cocmd-$TARGET"
+BINARY_POSTFIX=""
+DOWNLOAD_URL="https://github.com/${GITHUB_USER}/${REPO_NAME}/releases/download/${RELEASE_TAG}/${BINARY_NAME}${BINARY_POSTFIX}.tar.gz"
 
-# Download the .deb package from the GitHub release
-wget "https://github.com/${GITHUB_USER}/${REPO_NAME}/releases/download/${RELEASE_TAG}/${DEB_PACKAGE_NAME}"
+# Create a temporary directory for the download
+TEMP_DIR=$(mktemp -d)
+cd "$TEMP_DIR"
 
-# Install the .deb package
-sudo dpkg -i ${DEB_PACKAGE_NAME}
+# Download and extract the binary
+wget "$DOWNLOAD_URL"
+tar -xzf "${BINARY_NAME}${BINARY_POSTFIX}.tar.gz"
 
-# Install any missing dependencies (if needed)
-sudo apt-get -f install -y
+# Make the binary executable
+chmod +x "$BINARY_NAME"
 
-# Clean up the downloaded .deb file
-rm ${DEB_PACKAGE_NAME}
+# Move the binary to a location in your PATH (e.g., ~/bin)
+BIN_DIR="$HOME/bin"
+mkdir -p "$BIN_DIR"
+mv "$BINARY_NAME" "$BIN_DIR/"
 
-# Add cocmd to the user's PATH
-echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+# Clean up
+cd ..
+rm -r "$TEMP_DIR"
 
-echo "Cocmd has been successfully installed and added to your PATH!"
+echo "Cocmd has been successfully installed to $BIN_DIR!"
