@@ -3,7 +3,7 @@
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.0.33"
+RELEASE_TAG="v1.0.39"
 DEB_PACKAGE_NAME="cocmd-linux.tar.gz"
 
 # Install libssl1.1 (if needed)
