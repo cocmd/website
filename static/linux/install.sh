@@ -4,7 +4,7 @@
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
 RELEASE_TAG="v1.0.33"
-DEB_PACKAGE_NAME="cocmd-debian-x11-amd64.deb"
+DEB_PACKAGE_NAME="cocmd-linux.tar.gz"
 
 # Install libssl1.1 (if needed)
 
