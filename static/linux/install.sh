@@ -3,7 +3,7 @@
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.0.33"
+RELEASE_TAG="v1.0.52"
 
 # Determine host architecture
 HOST_ARCH=$(uname -m)
@@ -36,6 +36,7 @@ BINARY_NAME="cocmd-$TARGET"
 BINARY_POSTFIX=""
 DOWNLOAD_URL="https://github.com/${GITHUB_USER}/${REPO_NAME}/releases/download/${RELEASE_TAG}/${BINARY_NAME}${BINARY_POSTFIX}.tar.gz"
 
+
 # Create a temporary directory for the download
 TEMP_DIR=$(mktemp -d)
 cd "$TEMP_DIR"
@@ -44,13 +45,14 @@ cd "$TEMP_DIR"
 wget "$DOWNLOAD_URL"
 tar -xzf "${BINARY_NAME}${BINARY_POSTFIX}.tar.gz"
 
+ls -ltr 
+pwd
 # Make the binary executable
-chmod +x "$BINARY_NAME"
+chmod +x cocmd
 
-# Move the binary to a location in your PATH (e.g., ~/bin)
-BIN_DIR="$HOME/bin"
-mkdir -p "$BIN_DIR"
-mv "$BINARY_NAME" "$BIN_DIR/"
+
+# move 'cocmd' to path of executables in linux
+sudo mv cocmd /usr/local/bin
 
 # Clean up
 cd ..
