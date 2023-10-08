@@ -13,21 +13,40 @@ For example, lets say you have a lot of `git` commands you type in during the da
 
 ## Installation
 
+The binary executable is `cocmd`.
+
 ### Step 1 - Install CoCMD
-* MacOs
-Best way to install is with brew:
-```shell
+
+
+#### Homebrew
+
+```bash
 brew tap cocmd/cocmd
 brew install cocmd
 ```
 
-* Linux
-Install with apt:
+To update, run
+
+```bash
+brew upgrade cocmd
+```
+
+#### Snap
+
+For a system with Snap installed, run
+
+```bash
+snap install cocmd
+```
+
+#### Linux
+
+Run this in your terminal:
 ```shell
 bash -c "$(curl -fsSL https://cocmd.org/linux/install.sh)"
 ```
 
-* Windows - not supported yet
+#### Windows - not supported yet
 
 ### Step 2 - Add CoCMD to your shell
 
