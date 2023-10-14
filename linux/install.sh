@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Define variables
 GITHUB_USER="cocmd"
@@ -45,8 +46,6 @@ cd "$TEMP_DIR"
 wget "$DOWNLOAD_URL"
 tar -xzf "${BINARY_NAME}${BINARY_POSTFIX}.tar.gz"
 
-ls -ltr 
-pwd
 # Make the binary executable
 chmod +x cocmd
 
