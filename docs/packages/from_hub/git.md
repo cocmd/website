@@ -6,6 +6,11 @@ run in terminal:
 cocmd install -y git
 ```
 :::
+## automations (1)
+| command | env | description | how to run? |
+| --- | --- | --- | --- |
+| git.setup | MacOS | Install and configure git on this machine: install git. Configue git.  | run `git.setup` or `cocmd run git.setup` |
+
 ## aliases (14):
 ```
 alias g='git'

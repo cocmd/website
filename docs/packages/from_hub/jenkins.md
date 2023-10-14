@@ -6,11 +6,11 @@ run in terminal:
 cocmd install -y jenkins
 ```
 :::
-## paths (1)
+## Extending PATH (1)
 ./bin/:
-| filename | desc | usage 
+
+| command | desc | usage 
 | --- | --- | --- |
-| jenkins-lastbuild-check.sh |  |  |
-| jenkins-run.sh |  |  |
-| jenkins-run-build.sh |  |  |
+| `jenkins-lastbuild-check.sh` | Check the status of the latest build of a Jenkins job. | run `jenkins-lastbuild-check.sh jenkins_url job_name username password` |
+| `jenkins-run-build.sh` | Trigger a Jenkins job and optionally monitor its execution. | run `jenkins-run-build.sh jenkins_url job_name username password [parameters] [wait_for_finish]` |
 

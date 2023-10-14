@@ -6,6 +6,15 @@ run in terminal:
 cocmd install -y docker
 ```
 :::
+## automations (4)
+| command | env | description | how to run? |
+| --- | --- | --- | --- |
+| docker.setup | MacOS | setup docker for desktop: title. Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
+| docker.setup | Linux | setup docker for desktop: Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
+| docker.cleanup | Any | Cleanup Docker environment | run `docker.cleanup` or `cocmd run docker.cleanup` |
+| docker.monitor | Any | Monitor Docker resources | run `docker.monitor` or `cocmd run docker.monitor` |
+| docker.build-run | MacOS | Build and run a Docker image | run `docker.build-run` or `cocmd run docker.build-run` |
+
 ## aliases (14):
 ```
 alias d='docker'
@@ -23,18 +32,10 @@ alias dcerjasmine='docker-compose run --rm -e RAILS_ENV=test -p 8888:3000 rails 
 alias dcerspec='docker-compose run --rm -e RAILS_ENV=test rails rspec'
 
 ```
-## automations (4)
-| name | env | description | steps |
-| --- | --- | --- | --- |
-| setup | MacOS | setup docker for desktop | 3 |
-| setup | Linux | setup docker for desktop | 2 |
-| cleanup | Any | Cleanup Docker environment | 1 |
-| monitor | Any | Monitor Docker resources | 1 |
-| build-run | MacOS | Build and run a Docker image | 1 |
-
-## paths (2)
+## Extending PATH (2)
 ./scripts/:
-| filename | desc | usage 
+
+| command | desc | usage 
 | --- | --- | --- |
-| dockerinstall.osx.sh |  |  |
+| `dockerinstall.osx.sh` |  | run `` |
 

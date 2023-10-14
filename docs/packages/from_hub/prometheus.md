@@ -6,11 +6,9 @@ run in terminal:
 cocmd install -y prometheus
 ```
 :::
-## paths (1)
-./bin/:
-| filename | desc | usage 
-| --- | --- | --- |
-| prometheus-check.sh |  |  |
-| pod-restarts.sh | check for pod restarts in a namespace | pod-restarts.sh <ENV> <REGION> <REGEX> |
-| prometheus-run-env.sh |  |  |
+## automations (1)
+| command | env | description | how to run? |
+| --- | --- | --- | --- |
+| prometheus.query-condition | Any | Run a prometheus query and check if a condition is true | run `prometheus.query-condition` or `cocmd run prometheus.query-condition` |
+
 

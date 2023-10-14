@@ -6,6 +6,16 @@ run in terminal:
 cocmd install -y k8s
 ```
 :::
+## automations (5)
+| command | env | description | how to run? |
+| --- | --- | --- | --- |
+| k8s.setup | MacOS | setup Kubernetes for desktop: Instructions. Install Kubectl. Install Kubectx. Install Minikube. Intall K9s - Kubernetes CLI To Manage Your Clusters In Style. Install Helm. Install kube-capacity. Install Kor - Kubernetes Orphaned Resources Finder. Install kubefwd. Install VSCode plugins.  | run `k8s.setup` or `cocmd run k8s.setup` |
+| k8s.setup | Linux | Setup Kubernetes for desktop on Linux: Instructions. Install Kubectl. Install Kubectx. Install Minikube. Install Helm. Install VSCode plugins.  | run `k8s.setup` or `cocmd run k8s.setup` |
+| k8s.backup-configmaps | Any | Backup all ConfigMaps in a namespace | run `k8s.backup-configmaps` or `cocmd run k8s.backup-configmaps` |
+| k8s.rolling-restart | Any | Perform a rolling restart of a Deployment | run `k8s.rolling-restart` or `cocmd run k8s.rolling-restart` |
+| k8s.batch-pod-deletion | Any | Batch delete Pods based on a label | run `k8s.batch-pod-deletion` or `cocmd run k8s.batch-pod-deletion` |
+| k8s.check-pod-restarts | Any | Check for Pods with restart counts greater than 0 | run `k8s.check-pod-restarts` or `cocmd run k8s.check-pod-restarts` |
+
 ## aliases (125):
 ```
 alias k='kubectl'
@@ -134,13 +144,4 @@ alias minis='minikube start'
 alias miniv='minikube version'
 
 ```
-## automations (4)
-| name | env | description | steps |
-| --- | --- | --- | --- |
-| setup | MacOS | setup Kubernetes for desktop | 9 |
-| setup | Linux | Setup Kubernetes for desktop on Linux | 5 |
-| backup-configmaps | Any | Backup all ConfigMaps in a namespace | 1 |
-| rolling-restart | Any | Perform a rolling restart of a Deployment | 1 |
-| batch-pod-deletion | Any | Batch delete Pods based on a label | 1 |
-
 

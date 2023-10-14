@@ -7,8 +7,8 @@ cocmd install -y osx
 ```
 :::
 ## automations (1)
-| name | env | description | steps |
+| command | env | description | how to run? |
 | --- | --- | --- | --- |
-| setup-dev-common | Any | Setup common development tools on macOS | 8 |
+| osx.setup | MacOS | Setup common packages on macOS: install Homebrew. install basic packages. install xcode. install chrome browser. install firefox browser. install lastpass. install whatsapp for desktop. install slack. install zoom. install youtube player for desktop. install spotify. install pdf reader. install vlc player. install openvpn connect. install authy.  | run `osx.setup` or `cocmd run osx.setup` |
 
 
