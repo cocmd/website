@@ -6,7 +6,7 @@ run in terminal:
 cocmd install -y git
 ```
 :::
-## aliases (12):
+## aliases (14):
 ```
 alias g='git'
 alias gadd='git add -A .'
@@ -19,7 +19,8 @@ alias gpull='git pull'
 alias gpush='git push'
 alias gpushs='git push --set-upstream origin'
 alias gs='git status'
+alias gtag='git tag'
+alias gtags='git tag -n'
 
 ```
-## paths (2)
 
