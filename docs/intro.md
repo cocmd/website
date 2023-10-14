@@ -18,7 +18,7 @@ The binary executable is `cocmd`.
 ### Step 1 - Install CoCMD
 
 
-#### Homebrew
+#### Mac - Homebrew
 
 ```bash
 brew tap cocmd/cocmd
@@ -45,6 +45,20 @@ Run this in your terminal:
 ```shell
 bash -c "$(curl -fsSL https://cocmd.org/linux/install.sh)"
 ```
+
+#### Cargo
+
+Use this option if your architecture is not supported by the pre-built binaries found on the [releases page](https://github.com/cocmd/cocmd/releases).
+
+First, install [Rust](https://www.rust-lang.org/tools/install) (using the recommended `rustup` installation method) and then
+
+```bash
+cargo install cocmd
+```
+
+This method will build the binary from source.
+
+To update, run the same command again.
 
 #### Windows - not supported yet
 
