@@ -1,3 +1,4 @@
+[2m2023-10-17T16:51:30.423556Z[0m [31mERROR[0m [2mcocmd::core::models::settings[0m[2m:[0m /home/runner/.cocmd/saved_params.yaml: No such file or directory (os error 2)
 # Command-Line Help for `cocmd`
 
 This document contains the help content for the `cocmd` command-line program.
@@ -39,7 +40,9 @@ This document contains the help content for the `cocmd` command-line program.
 
 ###### **Options:**
 
-* `-v`, `--verbose` — Verbose flag for extra output
+* `-n`, `--no-verbose` — No-Verbose flag for less output
+
+  Default value: `false`
 
 
 
@@ -89,11 +92,15 @@ Docs command with a name argument - Generates and displays documentation
 
 Run command with a name argument - Runs a specific automation
 
-**Usage:** `cocmd run [NAME]`
+**Usage:** `cocmd run [OPTIONS] [NAME]`
 
 ###### **Arguments:**
 
 * `<NAME>` — Optional name argument for specifying which automation to run
+
+###### **Options:**
+
+* `-p`, `--param <PARAMS>` — Optional argument for input parameters
 
 
 
