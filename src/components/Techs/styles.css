@@ -53,5 +53,16 @@
   font-weight: bold; /* Make the text bold */
   text-decoration: underline; /* Add an underline */
   text-decoration-thickness: 10px; /* Specify the thickness (adjust the value as needed) */
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.hightlight2{
+  font-size: 1.5em;
+  margin-bottom: 100px;
 }
   
+
+.techBlock{
+  margin-top: 25px
+}

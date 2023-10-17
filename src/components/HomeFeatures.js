@@ -39,8 +39,33 @@ export default function HomeFeatures() {
       </div>
     <div className={styles["more-features-container"]} >
        
+    <SmallFeature
+          title="Great Onboarding experience"
+          icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
+          delay={200}
+        >
+          <p>
+            Don't let your documentation get out of date.
+            Write and maintain your setup and onboarding procedures as code.
+            
+          </p>
+        </SmallFeature>
+
         <SmallFeature
-          title="Scripts & Aliases"
+          title="Build Playbooks / Workflows"
+          icon={
+            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
+          }
+          delay={100}
+        >
+          <p>
+            Create Day-to-day workflows and share them with your team.
+            Oncall procedures, incident response, etc.
+            Makefiles don't cut it anymore...
+          </p>
+        </SmallFeature>
+        <SmallFeature
+          title="Just share Scripts & Aliases"
           icon={
             <CommandLineIcon className={styles["small-feature-icon"]} />
           }
@@ -52,29 +77,7 @@ export default function HomeFeatures() {
 
           </p>
         </SmallFeature>
-        <SmallFeature
-          title="Workflows"
-          icon={
-            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
-          }
-          delay={100}
-        >
-          <p>
-            Create Day-to-day workflows and share them with your team.
-            Oncall procedures, incident response, etc.
-          </p>
-        </SmallFeature>
-        <SmallFeature
-          title="Onboarding & Setup"
-          icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
-          delay={200}
-        >
-          <p>
-            Don't let your documentation get out of date.
-            Write and maintain your setup and onboarding procedures as code.
-            
-          </p>
-        </SmallFeature>
+        
         
       </div>
 
