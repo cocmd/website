@@ -7,6 +7,7 @@ import InstallButton from "./InstallButton";
 import Particles from "react-particles";
 import { useScreenSize } from "../hooks/useScreenSize";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+import CocmdExplainImg from '@site/static/img/cocmd1.png';
 
 export default function HomeJumbo() {
   const { isLargeScreen } = useScreenSize();
@@ -105,22 +106,29 @@ const particlesLoaded = useCallback(async container => {
       <div className={styles["content"]}>
         <div className={styles.headline}>
         {/* Add <span className={styles.highlight}>CMDOps</span> to Your Code Projects */}
-        <div>Streamlined</div>
-        <div className={styles.highlight}>Command Line Operations</div> <div>for Dev Teams</div>
+        <div>CMDOps for</div>
+        <div className={styles.highlight}>Onboarding & Playbooks</div> 
         </div>
-        <Fade bottom delay={300}>
-          <p className={styles.subtitle}>
-            
-            {/* Introducing <b>CMDOps</b> — <br/>effortless script sharing, streamlined workflows, and code-based setup */}
-            Describe with <i>YAML</i> <br/>project onboarding, actions and handy shortcuts.
-            
-          </p>
+        
+        
+        <Fade left delay={100}>
+        <img src={CocmdExplainImg} className={styles["cocmd-img"]}/>
         </Fade>
         <Fade bottom delay={50}>
           <div className={styles["get-started-button"]}>
             <InstallButton />
           </div>
         </Fade>
+
+        {/* <Fade bottom delay={300}>
+          <p className={styles.subtitle}>
+            
+            Describe with <i>YAML</i> <br/>project onboarding, actions and handy shortcuts.
+            
+          </p>
+        </Fade> */}
+
+        
       </div>
     </div>
   );

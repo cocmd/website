@@ -9,16 +9,16 @@
 }
 
 .content {
-  padding-top: 10vh;
-  padding-bottom: 15vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .headline {
   font-weight: bold;
-  font-size: 72px;
-  line-height: 87px;
+  font-size: 54px;
+  line-height: 59px;
   min-height: 20vh;
-  padding: 0 15% 0 15%;
+  padding: 0 5% 0 5%;
   text-align: center;
 }
 
@@ -65,4 +65,10 @@
   .get-started-button {
     margin-top: 20px;
   }
+}
+
+.cocmd-img {
+  max-height: 80vh;
+  max-width: 80%;
+  padding: 15px;
 }
