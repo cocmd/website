@@ -132,10 +132,7 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Install',
-                to: '/install',
-              },
+              
             ],
           },
           {
