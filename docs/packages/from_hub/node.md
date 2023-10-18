@@ -6,9 +6,21 @@ run in terminal:
 cocmd install -y node
 ```
 :::
-## automations (1)
+## automations (2)
 | command | env | description | how to run? |
 | --- | --- | --- | --- |
-| node.setup | MacOS | Setup common development tools on macOS: install Node.js. Install VSCode plugins.  | run `node.setup` or `cocmd run node.setup` |
+| node.setup | MacOS | Setup common development tools on macOS: install Node.js. Install yarn. Install VSCode plugins.  | run `node.setup` or `cocmd run node.setup` |
+| node.clean-cache | Any | Clean node cache and build artifacts | run `node.clean-cache` or `cocmd run node.clean-cache` |
 
+## aliases (8):
+```
+alias ni=npm install -S
+alias nid=npm install -D
+alias nb=npm run build
+alias nd=npm run deploy
+alias y=yarn
+alias ya=yarn add
+alias yr=yarn remove
+
+```
 
