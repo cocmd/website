@@ -1,5 +1,7 @@
 # go
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/go)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/go)
+> Please contribute your go scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

@@ -1,5 +1,7 @@
 # rust
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/rust)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/rust)
+> Please contribute your rust scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

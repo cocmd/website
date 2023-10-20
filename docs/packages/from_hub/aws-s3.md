@@ -1,5 +1,7 @@
 # aws-s3
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/aws-s3)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/aws-s3)
+> Please contribute your aws-s3 scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

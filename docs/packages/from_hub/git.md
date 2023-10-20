@@ -1,5 +1,7 @@
 # git
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/git)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/git)
+> Please contribute your git scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

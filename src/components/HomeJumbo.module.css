@@ -15,8 +15,8 @@
 
 .headline {
   font-weight: bold;
-  font-size: 54px;
-  line-height: 59px;
+  font-size: 75px;
+  line-height: 95px;
   min-height: 20vh;
   padding: 0 5% 0 5%;
   text-align: center;
@@ -69,6 +69,11 @@
 
 .cocmd-img {
   max-height: 80vh;
-  max-width: 80%;
-  padding: 15px;
+  max-width: 70%;
+  padding: 35px;
+
+  box-shadow: 10px 10px 10px 10px #ccc;
+      -moz-box-shadow: 10px 10px 10px 10px #ccc;
+      -webkit-box-shadow: 10px 10px 10px 10px #ccc;
+      -khtml-box-shadow: 10px 10px 10px 10px #ccc;
 }

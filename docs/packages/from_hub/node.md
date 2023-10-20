@@ -1,5 +1,7 @@
 # node
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/node)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/node)
+> Please contribute your node scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

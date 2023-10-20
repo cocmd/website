@@ -1,5 +1,7 @@
 # impala
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/impala)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/impala)
+> Please contribute your impala scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

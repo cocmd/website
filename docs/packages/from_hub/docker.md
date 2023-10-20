@@ -1,5 +1,7 @@
 # docker
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/docker)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/docker)
+> Please contribute your docker scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash
@@ -32,10 +34,10 @@ alias dcerjasmine='docker-compose run --rm -e RAILS_ENV=test -p 8888:3000 rails 
 alias dcerspec='docker-compose run --rm -e RAILS_ENV=test rails rspec'
 
 ```
-## Extending PATH (2)
+## PATH additions (2)
 ./scripts/:
 
 | command | desc | usage 
 | --- | --- | --- |
 | `dockerinstall.osx.sh` |  | run `` |
-
+./bin/ (not exists)

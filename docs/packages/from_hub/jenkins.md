@@ -1,12 +1,14 @@
 # jenkins
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/jenkins)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/jenkins)
+> Please contribute your jenkins scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash
 cocmd install -y jenkins
 ```
 :::
-## Extending PATH (1)
+## PATH additions (1)
 ./bin/:
 
 | command | desc | usage 

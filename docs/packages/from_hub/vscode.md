@@ -1,5 +1,7 @@
 # vscode
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/vscode)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/vscode)
+> Please contribute your vscode scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash

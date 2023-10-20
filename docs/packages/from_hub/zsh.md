@@ -1,5 +1,7 @@
 # zsh
-### [ Package Source Code ](https://github.com/cocmd/hub/tree/master/packages/zsh)
+### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/zsh)
+> Please contribute your zsh scripts and shortcuts
+> How to contribute? -
 :::info How To Install?
 run in terminal:
 ```bash
