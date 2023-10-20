@@ -1,7 +1,7 @@
 # osx
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/osx)
 > Please contribute your osx scripts and shortcuts
-> How to contribute? -
+> [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:
 ```bash

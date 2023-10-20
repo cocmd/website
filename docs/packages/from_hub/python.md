@@ -1,7 +1,7 @@
 # python
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/python)
 > Please contribute your python scripts and shortcuts
-> How to contribute? -
+> [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:
 ```bash

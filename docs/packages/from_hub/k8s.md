@@ -1,7 +1,7 @@
 # k8s
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/k8s)
 > Please contribute your k8s scripts and shortcuts
-> How to contribute? -
+> [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:
 ```bash
