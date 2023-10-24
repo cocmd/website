@@ -1,6 +1,6 @@
 # impala
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/impala)
-> Please contribute your impala scripts and shortcuts
+> Please contribute your impala playbooks and shortcuts
 > [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:

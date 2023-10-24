@@ -1,6 +1,6 @@
 # vscode
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/vscode)
-> Please contribute your vscode scripts and shortcuts
+> Please contribute your vscode playbooks and shortcuts
 > [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:

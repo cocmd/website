@@ -1,6 +1,6 @@
 # git
 ### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/git)
-> Please contribute your git scripts and shortcuts
+> Please contribute your git playbooks and shortcuts
 > [How to contribute?](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
 :::info How To Install?
 run in terminal:
