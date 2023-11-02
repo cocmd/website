@@ -68,6 +68,7 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const carousel = siteConfig.customFields.blogPosts;
   return (
     
     <Layout
