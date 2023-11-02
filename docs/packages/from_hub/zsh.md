@@ -11,6 +11,6 @@ cocmd install -y zsh
 ## automations (1)
 | command | env | description | how to run? |
 | --- | --- | --- | --- |
-| zsh.setup | MacOS | Setup zsh,oh-my-zsh for this machine: install iTerm2. install Zsh. configure Zsh. Install top zsh plugins.  | run `zsh.setup` or `cocmd run zsh.setup` |
+| zsh.setup | MacOS | Setup zsh,oh-my-zsh for this machine: install iTerm2. install Zsh. Install Zinit and top plugins. Install fzf (fuzzy finder).  | run `zsh.setup` or `cocmd run zsh.setup` |
 
 

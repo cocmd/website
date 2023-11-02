@@ -8,14 +8,16 @@ run in terminal:
 cocmd install -y docker
 ```
 :::
-## automations (4)
+## automations (5)
 | command | env | description | how to run? |
 | --- | --- | --- | --- |
-| docker.setup | MacOS | setup docker for desktop: title. Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
+| docker.setup | MacOS | setup docker for desktop: Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
 | docker.setup | Linux | setup docker for desktop: Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
 | docker.cleanup | Any | Cleanup Docker environment | run `docker.cleanup` or `cocmd run docker.cleanup` |
 | docker.monitor | Any | Monitor Docker resources | run `docker.monitor` or `cocmd run docker.monitor` |
 | docker.build-run | MacOS | Build and run a Docker image | run `docker.build-run` or `cocmd run docker.build-run` |
+| docker.start | MacOS | Start docker | run `docker.start` or `cocmd run docker.start` |
+| docker.start | Linux | Start docker | run `docker.start` or `cocmd run docker.start` |
 
 ## aliases (14):
 ```
