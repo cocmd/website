@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const CURRENT_STABLE_VERSION = "v1.0.3";
+const CURRENT_STABLE_VERSION = 'v1.0.66';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -95,10 +95,22 @@ const config = {
         },
         items: [
           {
-            to: '/install',
+            to: '/docs/intro',
             sidebarId: 'installSidebar',
             position: 'left',
-            label: 'Install',
+            label: 'Getting Started',
+          },
+          {
+            to: '/#hub',
+            sidebarId: 'hubSidebar',
+            position: 'left',
+            label: 'Hub',
+          },
+          {
+            to: 'docs/showcase',
+            sidebarId: 'installSidebar',
+            position: 'left',
+            label: 'Showcase',
           },
           {
             type: 'docSidebar',
@@ -106,9 +118,9 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/cocmd/cocmd',
+            href: 'https://github.com/cocmd',
             label: 'GitHub',
             position: 'left',
           },
@@ -120,27 +132,16 @@ const config = {
           {
             title: 'Docs',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              
             ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                href: 'https://discordapp.com/invite/cocmd',
+              }
             ],
           },
           {
@@ -152,12 +153,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/cocmd/cocmd',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Cocmd, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

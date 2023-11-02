@@ -1,37 +1,81 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
+slug: /intro
+
 ---
 
 # Getting Started
 
-Cocmd is an open source tool for Developers to add aliases and scripts to their Bash terminal commands (or any other Shell - zsh, fish etc).
+Cocmd is an open source tool for Developers to add Command line operations specification to their projects and 
+distribute them to their community.
 
 For example, lets say you have a lot of `git` commands you type in during the day. Use CoCMD to easily add `git` related scripts, shortcuts and automations to your terminal. 
 
+## Installation
+
+The binary executable is `cocmd`.
+
+### Step 1 - Install CoCMD
 
 
-### 1. Install
-First, please install cocmd with pip or poetry:
+#### Mac - Homebrew
 
 ```bash
-pip install cocmd
+brew tap cocmd/cocmd
+brew install cocmd
 ```
 
-### 2. Setup
-Second, we need some information for the first setup:
+To update, run
+
 ```bash
-cocmd setup
+brew upgrade cocmd
 ```
 
-You will get several questions to make CoCMD work for you:
-1. what is your shell
-  - this is important because we setup aliases and PATH in the rc file 
-2. scan depth (default is *1*)
-  - for each source, how deep to scan for `cocmd.yaml` file.
+#### Snap
 
-### 3. Add Tech Packs
-Add your favorite technologies
+For a system with Snap installed, run
+
 ```bash
-cocmd add tech <tech>
+snap install cocmd
 ```
-You will get a list of possible technologies to add to the cmd.
+
+#### Linux
+
+Run this in your terminal:
+```shell
+bash -c "$(curl -fsSL https://cocmd.org/linux/install.sh)"
+```
+
+#### Cargo
+
+Use this option if your architecture is not supported by the pre-built binaries found on the [releases page](https://github.com/cocmd/cocmd/releases).
+
+First, install [Rust](https://www.rust-lang.org/tools/install) (using the recommended `rustup` installation method) and then
+
+```bash
+cargo install cocmd
+```
+
+This method will build the binary from source.
+
+To update, run the same command again.
+
+#### Windows - not supported yet
+
+### Step 2 - Add CoCMD to your shell
+
+Run in terminal:
+```shell
+cocmd setup zsh
+or 
+cocmd setup bash
+```
+
+what this does is adding a loader of all aliases and automations shortcuts to your shell and lets you call any of them directly.
+
+## Add Packages
+
+You can start right away with `cocmd install`.
+See all packages options in [Hub](/docs/packages/from_hub).
+
+If you want to create your own read [Here](/docs/packages/package-specification)

@@ -9,19 +9,24 @@
 }
 
 .content {
-  padding-top: 10vh;
-  padding-bottom: 15vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .headline {
   font-weight: bold;
-  font-size: 72px;
-  line-height: 87px;
+  font-size: 75px;
+  line-height: 95px;
   min-height: 20vh;
+  padding: 0 5% 0 5%;
+  text-align: center;
 }
 
 .highlight {
-  color: var(--accent);
+  color: var(--ifm-color-primary);
+  font-weight: bold; /* Make the text bold */
+  text-decoration: underline; /* Add an underline */
+  text-decoration-thickness: 10px; /* Specify the thickness (adjust the value as needed) */
 }
 
 .get-started-button {
@@ -29,10 +34,11 @@
 }
 
 .subtitle {
-  padding-top: 3vh;
-  font-size: 24px;
-  line-height: 45px;
+  
+  font-size: 28px;
+  line-height: 48px;
   font-weight: 400;
+  padding: 5vh 5% 0 5%;
 }
 
 .particles {
@@ -62,9 +68,21 @@
 }
 
 
+
 .bigunderline{
   text-decoration: underline;
   text-decoration-color: var(--ifm-color-primary);
   text-decoration-thickness: 10px;
   text-underline-offset: 4px;
+}
+
+.cocmd-img {
+  max-height: 80vh;
+  max-width: 70%;
+  padding: 35px;
+
+  box-shadow: 10px 10px 10px 10px #ccc;
+      -moz-box-shadow: 10px 10px 10px 10px #ccc;
+      -webkit-box-shadow: 10px 10px 10px 10px #ccc;
+      -khtml-box-shadow: 10px 10px 10px 10px #ccc;
 }

@@ -1,0 +1,184 @@
+[2m2023-10-31T17:47:19.859804Z[0m [31mERROR[0m [2mcocmd::core::models::settings[0m[2m:[0m /home/runner/.cocmd/saved_params.yaml: No such file or directory (os error 2)
+# Command-Line Help for `cocmd`
+
+This document contains the help content for the `cocmd` command-line program.
+
+**Command Overview:**
+
+* [`cocmd`↴](#cocmd)
+* [`cocmd browse`↴](#cocmd-browse)
+* [`cocmd profile-loader`↴](#cocmd-profile-loader)
+* [`cocmd refresh`↴](#cocmd-refresh)
+* [`cocmd docs`↴](#cocmd-docs)
+* [`cocmd run`↴](#cocmd-run)
+* [`cocmd show`↴](#cocmd-show)
+* [`cocmd show package`↴](#cocmd-show-package)
+* [`cocmd show packages`↴](#cocmd-show-packages)
+* [`cocmd install`↴](#cocmd-install)
+* [`cocmd remove`↴](#cocmd-remove)
+* [`cocmd setup`↴](#cocmd-setup)
+
+## `cocmd`
+
+
+    Cocmd is a CLI utility to collaborate on anything in the CMD in the community and internal teams. 
+    Use it to sync Aliases, Scripts, and Workflows.
+
+**Usage:** `cocmd [OPTIONS] <COMMAND>`
+
+###### **Subcommands:**
+
+* `browse` — Terminal UI for browsing and running automations
+* `profile-loader` — Profile Loader command - Loads profiles
+* `refresh` — Refresh command - Refreshes something (add a description here)
+* `docs` — Docs command with a name argument - Generates and displays documentation
+* `run` — Run command with a name argument - Runs a specific automation
+* `show` — Show command with subcommands
+* `install` — Install command with subcommands
+* `remove` — Remove command (no subcommands) - Removes something (add a description here)
+* `setup` — Setup command with a shell argument - Set up the CLI tool, specify shell
+
+###### **Options:**
+
+* `-n`, `--no-verbose` — No-Verbose flag for less output
+
+  Default value: `false`
+
+
+
+## `cocmd browse`
+
+Terminal UI for browsing and running automations
+
+**Usage:** `cocmd browse`
+
+
+
+## `cocmd profile-loader`
+
+Profile Loader command - Loads profiles
+
+**Usage:** `cocmd profile-loader`
+
+
+
+## `cocmd refresh`
+
+Refresh command - Refreshes something (add a description here)
+
+**Usage:** `cocmd refresh`
+
+
+
+## `cocmd docs`
+
+Docs command with a name argument - Generates and displays documentation
+
+**Usage:** `cocmd docs [OPTIONS] [NAME]`
+
+###### **Arguments:**
+
+* `<NAME>` — Optional name argument for specific documentation generation
+
+###### **Options:**
+
+* `-r`, `--raw-markdown` — Optional flag to show raw markdown
+
+  Default value: `false`
+
+
+
+## `cocmd run`
+
+Run command with a name argument - Runs a specific automation
+
+**Usage:** `cocmd run [OPTIONS] [NAME]`
+
+###### **Arguments:**
+
+* `<NAME>` — Optional name argument for specifying which automation to run
+
+###### **Options:**
+
+* `-p`, `--param <PARAMS>` — Optional argument for input parameters
+
+
+
+## `cocmd show`
+
+Show command with subcommands
+
+**Usage:** `cocmd show <COMMAND>`
+
+###### **Subcommands:**
+
+* `package` — Package subcommand with a 'name' argument - Shows information about a specific package
+* `packages` — Packages subcommand - Shows information about all packages
+
+
+
+## `cocmd show package`
+
+Package subcommand with a 'name' argument - Shows information about a specific package
+
+**Usage:** `cocmd show package <NAME>`
+
+###### **Arguments:**
+
+* `<NAME>` — Name argument for 'show package' subcommand - Specifies the name of the package to show
+
+
+
+## `cocmd show packages`
+
+Packages subcommand - Shows information about all packages
+
+**Usage:** `cocmd show packages`
+
+
+
+## `cocmd install`
+
+Install command with subcommands
+
+**Usage:** `cocmd install [OPTIONS] [NAMES]...`
+
+###### **Arguments:**
+
+* `<NAMES>` — Name argument for 'install' - Specifies the name of the package to add
+
+###### **Options:**
+
+* `-y`, `--yes`
+
+  Default value: `false`
+
+
+
+## `cocmd remove`
+
+Remove command (no subcommands) - Removes something (add a description here)
+
+**Usage:** `cocmd remove`
+
+
+
+## `cocmd setup`
+
+Setup command with a shell argument - Set up the CLI tool, specify shell
+
+**Usage:** `cocmd setup [OPTIONS]`
+
+###### **Options:**
+
+* `-s`, `--shell <SHELL>` — Optional shell argument for 'setup' command - Specifies the shell to set up
+
+
+
+<hr/>
+
+<small><i>
+    This document was generated automatically by
+    <a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
+</i></small>
+

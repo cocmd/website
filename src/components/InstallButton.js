@@ -11,27 +11,27 @@ function InstallButton() {
     switch (os) {
       case "linux":
         return {
-          link: "/docs/install/linux",
+          link: "/docs/intro",
           text: "Get Started on Linux",
-          subtitle: "Also available on macOS and Windows",
+          subtitle: "Available also for MacOS",
         };
       case "mac":
         return {
-          link: "/docs/install/mac",
+          link: "/docs/intro",
           text: "Get Started on MacOS",
-          subtitle: "Also available on Windows and Linux",
+          subtitle: "Available also for Linux",
         };
       case "win":
         return {
-          link: "/docs/install/win",
-          text: "Get Started on Windows",
-          subtitle: "Also available on macOS and Linux",
+          link: "/docs/intro",
+          text: "Not available for Windows (yet)",
+          subtitle: "Available for MacOS and Linux",
         };
       default:
         return {
-          link: "/install",
+          link: "/docs/intro",
           text: "Get Started",
-          subtitle: "Available on macOS, Windows and Linux",
+          subtitle: "Available for MacOS and Linux",
         };
     }
   }, [os]);
@@ -41,7 +41,7 @@ function InstallButton() {
       <Link to={link} className="button button--primary button--lg">
           <span>{text}</span>
       </Link>
-      <Link className={styles.subtitle} to="/install">
+      <Link className={styles.subtitle} to="/docs/intro">
         {subtitle}
       </Link>
     </div>

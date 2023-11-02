@@ -19,7 +19,7 @@ import Link from "@docusaurus/Link";
 import { useOS } from "../hooks/useOS";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import { useScreenSize } from "../hooks/useScreenSize";
-import Devs1 from '@site/static/img/devs1_2.png';
+import Devs1 from '@site/static/img/dev_crazy.jpg';
 import Devs2 from '@site/static/img/devs2_1.png';
 import Devs3 from '@site/static/img/devs3.png';
 
@@ -35,12 +35,37 @@ export default function HomeFeatures() {
 
   
         <div className={styles.heading}>
-        <h2>What can you build with CoCMD?</h2>
+        <h2>What can you build?</h2>
       </div>
     <div className={styles["more-features-container"]} >
        
+    <SmallFeature
+          title="Great Onboarding experience"
+          icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
+          delay={200}
+        >
+          <p>
+            Don't let your documentation get out of date.
+            Write and maintain your setup and onboarding procedures as code.
+            
+          </p>
+        </SmallFeature>
+
         <SmallFeature
-          title="Scripts & Aliases"
+          title="Build Playbooks / Workflows"
+          icon={
+            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
+          }
+          delay={100}
+        >
+          <p>
+            Create Day-to-day workflows and share them with your team.
+            Oncall procedures, incident response, etc.
+            Makefiles don't cut it anymore...
+          </p>
+        </SmallFeature>
+        <SmallFeature
+          title="Just share Scripts & Aliases"
           icon={
             <CommandLineIcon className={styles["small-feature-icon"]} />
           }
@@ -52,29 +77,7 @@ export default function HomeFeatures() {
 
           </p>
         </SmallFeature>
-        <SmallFeature
-          title="Workflows"
-          icon={
-            <DocumentDuplicateIcon className={styles["small-feature-icon"]} />
-          }
-          delay={100}
-        >
-          <p>
-            Create Day-to-day workflows and share them with your team.
-            Oncall procedures, incident response, etc.
-          </p>
-        </SmallFeature>
-        <SmallFeature
-          title="Setup & Onboarding"
-          icon={<QrCodeIcon className={styles["small-feature-icon"]} />}
-          delay={200}
-        >
-          <p>
-            Don't let your documentation get out of date.
-            Write and maintain your setup and onboarding procedures as code.
-            
-          </p>
-        </SmallFeature>
+        
         
       </div>
 
@@ -92,16 +95,14 @@ export default function HomeFeatures() {
             icon={<FlagIcon className={styles.icon} />}
           >
             <p>
-              
-              <ul>
-              <li>No more asking teammates for the right command</li>
-              <li>No more outdated documentation</li>
+              Use CoCMD to distribute CMD operations as code.
+            
+              <ul style={{marginTop: "50px"}}>
               <li>No more sending scripts over Slack</li>
+              <li>No more outdated documentation for "cmd instructions"</li>
+              <li>Project onboarding like a pro</li>
+              <li>Full dev team collaboration 💪</li>
               </ul>
-              Use CoCMD to write and share your scripts, workflows and aliases as code.
-
-
-
             </p>
           </FeatureDescription>
         }
@@ -115,42 +116,20 @@ export default function HomeFeatures() {
         
         description={
           <FeatureDescription
-            title="Vision: Gitops for CMD"
+            title="Vision: 10x Dev Experience"
             icon={<FireIcon className={styles.icon} />}
           >
             <p>
-              CoCMD is a community for CMD operations as code. 
-              <br />
-              <br />
-              We believe that CMD operations should be treated as code, and that
-              the best way to share them is by using Git.
+              <ul>
+              <li><u>Community Projects:</u> Add your own CMD operations as Opensource. don't let people reinvent the wheel.</li>
+              
+              <li><u>Teams and Enterprises:</u> Use Git for internal projects and share CMD operations with your team.</li>
+              </ul>
             </p>
           </FeatureDescription>
         }
       />
       
-      <Feature
-        reversed
-        main={
-          <div className={styles["feature-card"]}>
-            <img src={Devs3} />
-          </div>
-        }
-        description={
-          <FeatureDescription
-            title="Endless possibilities"
-            icon={<PuzzlePieceIcon className={styles.icon} />}
-          >
-            <p>
-              Extend the basic CoCMD functionality by installing packages.
-              <br />
-              <br />
-              Packages can be used to add new commands, new triggers, new
-              variables and more.
-            </p>
-          </FeatureDescription>
-        }
-      />
       
     </div>
   );
