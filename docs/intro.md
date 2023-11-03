@@ -21,8 +21,7 @@ The binary executable is `cocmd`.
 #### Mac - Homebrew
 
 ```bash
-brew tap cocmd/cocmd
-brew install cocmd
+brew install cocmd/tap/cocmd
 ```
 
 To update, run
@@ -60,7 +59,10 @@ This method will build the binary from source.
 
 To update, run the same command again.
 
-#### Windows - not supported yet
+#### Windows 
+Get it from release page and add to your path
+[Link to Release Page](https://github.com/cocmd/cocmd/releases)
+
 
 ### Step 2 - Add CoCMD to your shell
 
