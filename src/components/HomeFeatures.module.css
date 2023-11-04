@@ -81,11 +81,13 @@
   border-radius: var(--border-radius-large);
   filter: var(--big-shadow);
   padding: 16px;
+
   margin: -12px 48px 8px 48px;
   flex: 1;
   text-align: left;
-  min-height: 230px;
-  min-width: 400px;
+  
+  min-width: 200px;
+  max-width: 400px;
 }
 
 .entry {

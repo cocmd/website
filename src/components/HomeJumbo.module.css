@@ -67,6 +67,15 @@
   }
 }
 
+
+
+.bigunderline{
+  text-decoration: underline;
+  text-decoration-color: var(--ifm-color-primary);
+  text-decoration-thickness: 10px;
+  text-underline-offset: 4px;
+}
+
 .cocmd-img {
   max-height: 80vh;
   max-width: 70%;

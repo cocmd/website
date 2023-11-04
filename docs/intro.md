@@ -21,14 +21,13 @@ The binary executable is `cocmd`.
 #### Mac - Homebrew
 
 ```bash
-brew tap cocmd/cocmd
-brew install cocmd
+brew install cocmd/tap/cocmd
 ```
 
 To update, run
 
 ```bash
-brew upgrade cocmd
+brew upgrade cocmd/tap/cocmd
 ```
 
 #### Snap

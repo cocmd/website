@@ -105,8 +105,6 @@ const particlesLoaded = useCallback(async container => {
       </div>
       <div className={styles["content"]}>
         <div className={styles.headline}>
-        {/* Add <span className={styles.highlight}>CMDOps</span> to Your Code Projects */}
-        
         <div className={styles.highlight}>Onboarding & Playbooks</div> 
         <div>as code</div>
         </div>
