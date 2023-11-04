@@ -1,7 +1,6 @@
 ---
 sidebar_position: 0
 slug: /intro
-
 ---
 
 # Getting Started
@@ -16,7 +15,6 @@ For example, lets say you have a lot of `git` commands you type in during the da
 The binary executable is `cocmd`.
 
 ### Step 1 - Install CoCMD
-
 
 #### Mac - Homebrew
 
@@ -66,14 +64,25 @@ Get it from release page and add to your path
 
 ### Step 2 - Add CoCMD to your shell
 
-Run in terminal:
+To add CoCMD to your shell, run the appropriate command in your terminal based on your shell:
+
+For Zsh:
 ```shell
-cocmd setup zsh
-or 
-cocmd setup bash
+cocmd setup --shell zsh
 ```
 
-what this does is adding a loader of all aliases and automations shortcuts to your shell and lets you call any of them directly.
+For Bash:
+```shell
+cocmd setup --shell bash
+```
+
+Alternatively, you can simply run:
+```shell
+cocmd setup
+```
+and the setup command will attempt to detect your shell and apply the configuration.
+
+What this does is adding a loader of all aliases and automations shortcuts to your shell and lets you call any of them directly.
 
 ## Add Packages
 

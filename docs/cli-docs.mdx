@@ -1,4 +1,3 @@
-[2m2023-11-03T22:45:15.024642Z[0m [31mERROR[0m [2mcocmd::core::models::settings[0m[2m:[0m /home/runner/.cocmd/saved_params.yaml: No such file or directory (os error 2)
 # Command-Line Help for `cocmd`
 
 This document contains the help content for the `cocmd` command-line program.
@@ -15,6 +14,7 @@ This document contains the help content for the `cocmd` command-line program.
 * [`cocmd show package`↴](#cocmd-show-package)
 * [`cocmd show packages`↴](#cocmd-show-packages)
 * [`cocmd install`↴](#cocmd-install)
+* [`cocmd uninstall`↴](#cocmd-uninstall)
 * [`cocmd remove`↴](#cocmd-remove)
 * [`cocmd setup`↴](#cocmd-setup)
 
@@ -35,6 +35,7 @@ This document contains the help content for the `cocmd` command-line program.
 * `run` — Run command with a name argument - Runs a specific automation
 * `show` — Show command with subcommands
 * `install` — Install command with subcommands
+* `uninstall` — Uninstall command with a package name argument - Uninstalls a specific package
 * `remove` — Remove command (no subcommands) - Removes something (add a description here)
 * `setup` — Setup command with a shell argument - Set up the CLI tool, specify shell
 
@@ -152,6 +153,18 @@ Install command with subcommands
 * `-y`, `--yes`
 
   Default value: `false`
+
+
+
+## `cocmd uninstall`
+
+Uninstall command with a package name argument - Uninstalls a specific package
+
+**Usage:** `cocmd uninstall <NAME>`
+
+###### **Arguments:**
+
+* `<NAME>` — Name argument for 'uninstall' - Specifies the name of the package to uninstall
 
 
 

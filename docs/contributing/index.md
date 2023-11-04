@@ -1,24 +1,37 @@
 # Contribute
 
-### Contribute to the Hub
-We maintain our hub in a Github repo: [cocmd/hub](https://github.com/cocmd/hub)
-
-We encourage you to reach out.
-
-- [Report an issue](https://github.com/cocmd/hub/issues/new)
-
-- Looking to contribute? See our [good first issues](https://github.com/cocmd/hub/contribute).
-- Here's [how to contribute](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md) 
-
-Please add great packages to it and help us grow the community.
-
-### Contribute to the CLI
-We maintain our Cli in a Github repo: [cocmd/cocmd](https://github.com/cocmd/cocmd)
-- [Report an issue](https://github.com/cocmd/cocmd/issues/new)
-- Here's how to [contribute to cocmd](https://github.com/cocmd/cocmd/blob/master/CONTRIBUTING.md)
-- Looking to contribute? See our cli [good first issues](https://github.com/cocmd/cocmd/contribute) - Here's [how to contribute](https://github.com/cocmd/hub/blob/master/CONTRIBUTING.md)
-- Looking to contribute cocmd-packages? See our hub [good first issues](https://github.com/cocmd/hub/contribute).
-
-Please add great features to it and help us grow the community.
 
 
+## How can you help?
+
+- [Add an Idea 💡💡💡 for a new playbook](https://github.com/cocmd/hub/issues/new)
+- [Code with us - 🔥features / 🔥bugs](https://github.com/cocmd/cocmd/contribute)
+- [Report a bug 🐞🧨🐞](https://github.com/cocmd/cocmd/issues/new)
+
+
+
+## Newcomers onboarding
+
+This is going to help you to get started with the project.
+
+1. Install cocmd [Getting Started](/docs/intro)
+2. install and Run the Contributors onboarding packages:
+
+```bash
+cocmd install https://github.com/cocmd/cocmd
+cocmd run cocmd.contrib-onboarding
+
+```
+
+it's going to:
+- install git
+- install rust
+- install node
+- clone all Cocmd repos
+- build the website
+- build cocmd cli
+- open vscode with all the repos
+
+Thank you for your help! 🙏🙏🙏
+
+Join us on Discord - https://discord.gg/PzaBZade
