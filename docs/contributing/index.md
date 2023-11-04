@@ -10,9 +10,11 @@
 
 
 
-## Setup
+## Newcomers onboarding
 
-1. Install cocmd cli [Getting Started](/docs/intro)
+This is going to help you to get started with the project.
+
+1. Install cocmd [Getting Started](/docs/intro)
 2. install and Run the Contributors onboarding packages:
 
 ```bash
@@ -31,4 +33,5 @@ it's going to:
 - open vscode with all the repos
 
 Thank you for your help! 🙏🙏🙏
+
 Join us on Discord - https://discord.gg/PzaBZade
