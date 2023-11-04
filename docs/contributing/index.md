@@ -35,3 +35,5 @@ it's going to:
 Thank you for your help! 🙏🙏🙏
 
 Join us on Discord - https://discord.gg/PzaBZade
+
+## See it live [Here](https://asciinema.org/a/619310)
