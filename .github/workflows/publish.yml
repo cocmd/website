@@ -26,8 +26,19 @@ jobs:
           cache: yarn
       - run: yarn
       - run: yarn run build
-      - run: yarn run deploy
+      # - run: yarn run deploy
+      #   env:
+      #     GIT_USER: gitactions
+      #     USE_SSH: true
+      #     GITHUB_TOKEN: ${{ secrets.WEBSITE_GITHUB_WRITE_TOKEN }}
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
         env:
-          GIT_USER: gitactions
-          USE_SSH: true
           GITHUB_TOKEN: ${{ secrets.WEBSITE_GITHUB_WRITE_TOKEN }}
