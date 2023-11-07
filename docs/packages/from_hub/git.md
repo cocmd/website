@@ -8,11 +8,14 @@ run in terminal:
 cocmd install -y git
 ```
 :::
-## automations (2)
+## automations (3)
 | command | env | description | how to run? |
 | --- | --- | --- | --- |
 | git.setup | MacOS | Install and configure git on this machine: install git. Configue git.  | run `git.setup` or `cocmd run git.setup` |
 | git.commit-push-all | Any | add all, commit and push: add all. commit. push.  | run `git.commit-push-all` or `cocmd run git.commit-push-all` |
+| git.setup.github | MacOS | install github cli: install brew. install gh.  | run `git.setup.github` or `cocmd run git.setup.github` |
+| git.setup.github | Windows | install github cli | run `git.setup.github` or `cocmd run git.setup.github` |
+| git.setup.github | Linux | install github cli | run `git.setup.github` or `cocmd run git.setup.github` |
 
 ## aliases (14):
 ```

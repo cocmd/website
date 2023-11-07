@@ -8,10 +8,15 @@ run in terminal:
 cocmd install -y node
 ```
 :::
-## automations (2)
+## automations (5)
 | command | env | description | how to run? |
 | --- | --- | --- | --- |
-| node.setup | MacOS | Setup common development tools on macOS: install Node.js. Install yarn. Install VSCode plugins.  | run `node.setup` or `cocmd run node.setup` |
+| node.setup.yarn | Any | setup yarn | run `node.setup.yarn` or `cocmd run node.setup.yarn` |
+| node.setup.pnpm | Windows | setup pnpm - https://pnpm.io/installation | run `node.setup.pnpm` or `cocmd run node.setup.pnpm` |
+| node.setup.pnpm | Linux | setup pnpm - https://pnpm.io/installation | run `node.setup.pnpm` or `cocmd run node.setup.pnpm` |
+| node.setup.pnpm | MacOS | setup pnpm - https://pnpm.io/installation | run `node.setup.pnpm` or `cocmd run node.setup.pnpm` |
+| node.remove.pnpm | MacOS | remove pnpm | run `node.remove.pnpm` or `cocmd run node.remove.pnpm` |
+| node.setup | MacOS | setup node on macos: install Node.js. Install yarn. Install VSCode plugins.  | run `node.setup` or `cocmd run node.setup` |
 | node.clean-cache | Any | Clean node cache and build artifacts | run `node.clean-cache` or `cocmd run node.clean-cache` |
 
 ## aliases (8):
