@@ -1,4 +1,4 @@
-# hub
+# Cocmd website
 
 The official Cocmd's website repository
 
