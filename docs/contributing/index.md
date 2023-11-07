@@ -32,6 +32,6 @@ Thank you for your help! 🙏🙏🙏
 
 [![Discord Channel](https://dcbadge.vercel.app/api/server/hKFKTaMKkq/)](https://discord.gg/KqzhTaDn)
 
-## See it live
+## See it live!
 
 [![asciicast](https://asciinema.org/a/619310.svg)](https://asciinema.org/a/619310)
