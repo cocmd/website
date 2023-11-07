@@ -29,8 +29,10 @@ jobs:
           cache: yarn
       - run: yarn
       - run: yarn run build
-      - uses: fregante/setup-git-user@v1
-      - run: yarn run deploy
+      - run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          yarn run deploy
         env:
           GIT_USER: gitactions
           USE_SSH: true
