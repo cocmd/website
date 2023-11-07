@@ -1,41 +1,26 @@
-# Website
+# hub
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The official Cocmd's website repository
 
-### Installation
+See https://cocmd.org/ for more information about Cocmd. 
 
-```
-$ yarn
-```
+[![Discord Channel](https://dcbadge.vercel.app/api/server/hKFKTaMKkq/)](https://discord.gg/KqzhTaDn)
 
-### Local Development
+## Contribute
 
-```
-$ yarn start
-```
+Contribution guide can be found [here](https://cocmd.org/docs/contributing)
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+- [Add an Idea 💡💡💡 for a new playbook](https://github.com/cocmd/hub/issues/new)
+- [Code with us - 🔥features / 🔥bugs](https://github.com/cocmd/cocmd/contribute)
+- [Report a bug 🐞🧨🐞](https://github.com/cocmd/cocmd/issues/new)
 
-```
-$ yarn build
-```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+## Contributos of Cocmd Website ❤️
 
-### Deployment
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## License
+Cocmd was created by [Moshe Roth](https://www.linkedin.com/in/mosherot/)
+and is licensed under the [GPL-3.0 license](/LICENSE).
