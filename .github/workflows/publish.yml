@@ -15,8 +15,11 @@ jobs:
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   publish-packages:
-    concurrency: deploy
     runs-on: ubuntu-latest
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -40,5 +43,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.WEBSITE_GITHUB_WRITE_TOKEN }}
