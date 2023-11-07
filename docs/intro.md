@@ -57,7 +57,10 @@ This method will build the binary from source.
 
 To update, run the same command again.
 
-#### Windows - not supported yet
+#### Windows 
+Get it from release page and add to your path
+[Link to Release Page](https://github.com/cocmd/cocmd/releases)
+
 
 ### Step 2 - Add CoCMD to your shell
 

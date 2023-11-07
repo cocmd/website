@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const CURRENT_STABLE_VERSION = 'v';
+const CURRENT_STABLE_VERSION = 'v1.0.77';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -118,7 +118,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/cocmd',
             label: 'GitHub',
