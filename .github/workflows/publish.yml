@@ -18,15 +18,10 @@ jobs:
     concurrency: deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@master
+      - uses: redkubes/docusaurus-deploy-action@v1
         with:
-          node-version: '21.x'
-      - run: yarn
-      - run: yarn run build
-      - run: yarn run deploy
-        env:
-          GIT_USER: gitactions
-          USE_SSH: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          source-folder: website
+          git-user: $SOME_USERNAME
+          git-password: ${{ secrets.GITHUB_TOKEN }}
+          deployment-branch: gh-pages
