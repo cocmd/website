@@ -34,6 +34,10 @@ it's going to:
 
 Thank you for your help! 🙏🙏🙏
 
-Join us on Discord - https://discord.gg/PzaBZade
+## Join us on Discord
 
-## See it live [Here](https://asciinema.org/a/619310)
+[![Discord Channel](https://dcbadge.vercel.app/api/server/hKFKTaMKkq/)](https://discord.gg/kPZBDKbk)
+
+## See it live
+
+[![asciicast](https://asciinema.org/a/619310.svg)](https://asciinema.org/a/619310)
