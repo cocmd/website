@@ -30,4 +30,4 @@ jobs:
         env:
           GIT_USER: gitactions
           USE_SSH: true
-          GITHUB_TOKEN: ${{ secrets.website_github_write_token }}
+          GITHUB_TOKEN: ${{ secrets.WEBSITE_GITHUB_WRITE_TOKEN }}
