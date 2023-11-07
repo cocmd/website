@@ -37,5 +37,5 @@ jobs:
         env:
           GIT_USER: gitactions
           USE_SSH: true
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WEBSITE_GITHUB_WRITE_TOKEN }}
       
