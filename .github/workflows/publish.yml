@@ -27,4 +27,6 @@ jobs:
       - run: yarn run build
       - run: yarn run deploy
         env:
+          GIT_USER: gitactions
+          USE_SSH: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
