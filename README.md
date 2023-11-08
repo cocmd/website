@@ -16,7 +16,7 @@ Contribution guide can be found [here](https://cocmd.org/docs/contributing)
 - [Report a bug 🐞🧨🐞](https://github.com/cocmd/cocmd/issues/new)
 
 
-## Contributos of Cocmd Website ❤️
+## Contributors of Cocmd Website ❤️
 
 <!-- readme: contributors -start -->
 <table>
