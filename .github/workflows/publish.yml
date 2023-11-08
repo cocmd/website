@@ -14,6 +14,8 @@ jobs:
           uses: akhilmhdh/contributors-readme-action@v2.3.6
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with: 
+            use_username: true
   publish-packages:
     runs-on: ubuntu-latest
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
