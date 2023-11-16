@@ -4,7 +4,7 @@ set -e
 # Define variables
 GITHUB_USER="cocmd"
 REPO_NAME="cocmd"
-RELEASE_TAG="v1.0.77"
+RELEASE_TAG="v1.0.79"
 
 # Determine host architecture
 HOST_ARCH=$(uname -m)
