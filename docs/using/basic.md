@@ -39,6 +39,34 @@ cocmd uninstall <package>
 and it's gone.
 
 
+## See it in action: python.setup playbook
+✅ install Python
+✅ Python VSCode plugins
+✅ Install miniconda
+[![asciicast](https://asciinema.org/a/621260.svg)](https://asciinema.org/a/621260)
+
+## See it in action: node.setup playbook
+✅ install Node.js
+✅ Install yarn
+✅ Install VSCode plugins
+
+[![asciicast](https://asciinema.org/a/621261.svg)](https://asciinema.org/a/621261)
+
+## See it in action: full web project onboarding
+as instructed in [CONTRIBUTING.md](https://github.com/Maakaf/maakaf-temp/blob/main/CONTRIBUTING.md#%D7%94%D7%AA%D7%A7%D7%A0%D7%94-%D7%9E%D7%94%D7%99%D7%A8%D7%94) of a classic web project:
+
+✅ vscode
+✅ git
+✅ github cli
+✅ node
+✅ pnpm
+✅ git clones
+✅ run website
+✅ vscode extensions
+✅ open IDEs
+[![asciicast](https://asciinema.org/a/621263.svg)](https://asciinema.org/a/621263)
+
+
 ## More Packages?
 All available packages are on [Cocmd Hub](https://cocmd.org/#hub).
 Also, you can run:
@@ -56,4 +84,4 @@ You can browse them with:
 cocmd browse
 ```
 
-
+[![asciicast](https://asciinema.org/a/621268.svg)](https://asciinema.org/a/621268)
