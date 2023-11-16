@@ -3,16 +3,12 @@ sidebar_position: 0
 slug: /intro
 ---
 
-# Getting Started
+# Installation
 
-Cocmd is an open source tool for Developers to add Command line operations specification to their projects and 
-distribute them to their community.
 
-For example, lets say you have a lot of `git` commands you type in during the day. Use CoCMD to easily add `git` related scripts, shortcuts and automations to your terminal. 
+The binary executable is `cocmd`. 
 
-## Installation
-
-The binary executable is `cocmd`.
+Downloadable releases [here](https://github.com/cocmd/cocmd/releases)
 
 ### Step 1 - Install CoCMD
 

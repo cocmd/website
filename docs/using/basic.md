@@ -1,35 +1,59 @@
 ---
 sidebar_position: 1
-title: Basic
+title: First Steps
 ---
 
 After cocmd is ready on your machine, you can start installing and running 
 packages. 
 Packages can be installed from any Git repository you have access to (public or private) or from Cocmd hub.
 
-Cocmd maintains a set of public packages that you can install and use right away.
 
-For example, if you are a Python developer, you can install and run the `python` package, the `setup` playbook:
+## Installing and Running
+For example, if you are a Python developer, you can **install a package** - the `python` package:
 
-```shell
-cocmd run python.setup --from python
-```
-
-
-
-which is like running two commands:
 ```shell
 cocmd install python
+```
+
+now you can **run a playbook** - for example the `setup` playbook:
+
+
+```shell
 cocmd run python.setup
 ```
 
-now you should see the `python` package installed:
+or after opening a new terminal session:
+```shell
+python.setup
+```
 
+to **see what more is available** in the `python` package, you can run:
 ```shell
 cocmd show package python
 ```
 
-![Alt text](./static/showpy.png "show python")
+**Removing** is easy  
+```shell
+cocmd uninstall <package>
+``` 
+and it's gone.
 
-This means that we can run `python.setup` (after opening new terminal) or with `cocmd run python.setup` to install Python on our machine:
+
+## More Packages?
+All available packages are on [Cocmd Hub](https://cocmd.org/#hub).
+Also, you can run:
+```bash
+cocmd install
+```
+
+to see all available packages from Cocmd hub. 
+
+## Browsing
+
+There are many cocmd packages in your machine?
+You can browse them with:
+```bash
+cocmd browse
+```
+
 

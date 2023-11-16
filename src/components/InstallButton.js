@@ -13,25 +13,25 @@ function InstallButton() {
         return {
           link: "/docs/intro",
           text: "Get Started on Linux",
-          subtitle: "Available also for MacOS",
+          subtitle: "Available for MacOS, Linux and Windows",
         };
       case "mac":
         return {
           link: "/docs/intro",
           text: "Get Started on MacOS",
-          subtitle: "Available also for Linux",
+          subtitle: "Available for MacOS, Linux and Windows",
         };
       case "win":
         return {
           link: "/docs/intro",
-          text: "Not available for Windows (yet)",
-          subtitle: "Available for MacOS and Linux",
+          text: "Get started on Windows",
+          subtitle: "Available for MacOS, Linux and Windows",
         };
       default:
         return {
           link: "/docs/intro",
           text: "Get Started",
-          subtitle: "Available for MacOS and Linux",
+          subtitle: "Available for MacOS, Linux and Windows",
         };
     }
   }, [os]);
