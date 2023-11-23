@@ -1,45 +1,27 @@
-# docker
-### Visit the package [ Source Code ](https://github.com/cocmd/hub/tree/master/packages/docker)
-> Please contribute your docker playbooks and shortcuts
-> [How to contribute?](https://cocmd.org/docs/contributing)
-:::info How To Install?
-run in terminal:
-```bash
-cocmd install -y docker
-```
-:::
-## automations (5)
-| command | env | description | how to run? |
-| --- | --- | --- | --- |
-| docker.setup | MacOS | setup docker for desktop: Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
-| docker.setup | Linux | setup docker for desktop: Install docker. Install docker-compose.  | run `docker.setup` or `cocmd run docker.setup` |
-| docker.cleanup | Any | Cleanup Docker environment | run `docker.cleanup` or `cocmd run docker.cleanup` |
-| docker.monitor | Any | Monitor Docker resources | run `docker.monitor` or `cocmd run docker.monitor` |
-| docker.build-run | MacOS | Build and run a Docker image | run `docker.build-run` or `cocmd run docker.build-run` |
-| docker.start | MacOS | Start docker | run `docker.start` or `cocmd run docker.start` |
-| docker.start | Linux | Start docker | run `docker.start` or `cocmd run docker.start` |
 
-## aliases (14):
-```
-alias d='docker'
-alias da='docker attach'
-alias dr='docker restart'
-alias dimg='docker images'
-alias dps='docker ps'
-alias dvol='docker volume ls'
-alias dclearimg='docker rmi $(docker images --quiet --filter "dangling=true")'
-alias dclearps='docker ps --filter status=dead --filter status=exited -aq | xargs docker rm -v'
-alias dclearvol='docker volume rm $(docker volume ls -qf dangling=true)'
-alias dc='docker-compose'
-alias dcer='docker-compose exec rails'
-alias dcerjasmine='docker-compose run --rm -e RAILS_ENV=test -p 8888:3000 rails rails jasmine'
-alias dcerspec='docker-compose run --rm -e RAILS_ENV=test rails rspec'
 
-```
-## PATH additions (2)
-./scripts/:
+This package contains 5 playbooks:
 
-| command | desc | usage 
-| --- | --- | --- |
-| `dockerinstall.osx.sh` |  | run `` |
-./bin/ (not exists)
+setup docker for desktop
+run it with: `cocmd run docker.setup`
+
+setup docker for desktop
+run it with: `cocmd run docker.setup`
+
+Cleanup Docker environment
+run it with: `cocmd run docker.cleanup`
+
+Monitor Docker resources
+run it with: `cocmd run docker.monitor`
+
+Build and run a Docker image
+run it with: `cocmd run docker.build-run`
+
+Start docker
+run it with: `cocmd run docker.start`
+
+Start docker
+run it with: `cocmd run docker.start`
+
+
+
