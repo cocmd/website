@@ -12,20 +12,17 @@ cocmd install -y vscode
 
 This package contains 3 playbooks:
 
-### vscode.setup-vscode-cli (MacOS)
-install vscode cli 'code' in your shell
+### vscode.setup-extentions (MacOS)
 
-run it with: `cocmd run vscode.setup-vscode-cli`
+run it with: `cocmd run vscode.setup-extentions`
 
 ### vscode.setup (MacOS)
-Install VSCode and coding plugins
 
 run it with: `cocmd run vscode.setup`
 
-### vscode.setup-extentions (MacOS)
-Install VSCode and extentions
+### vscode.setup-vscode-cli (MacOS)
 
-run it with: `cocmd run vscode.setup-extentions`
+run it with: `cocmd run vscode.setup-vscode-cli`
 
 
 

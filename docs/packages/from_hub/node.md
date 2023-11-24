@@ -12,40 +12,17 @@ cocmd install -y node
 
 This package contains 5 playbooks:
 
-### node.setup.yarn
-setup yarn
-
-run it with: `cocmd run node.setup.yarn`
-
-### node.setup.pnpm (Windows)
-setup pnpm - https://pnpm.io/installation
-
-run it with: `cocmd run node.setup.pnpm`
-
-### node.setup.pnpm (Linux)
-setup pnpm - https://pnpm.io/installation
-
-run it with: `cocmd run node.setup.pnpm`
-
-### node.setup.pnpm (MacOS)
-setup pnpm - https://pnpm.io/installation
-
-run it with: `cocmd run node.setup.pnpm`
-
-### node.remove.pnpm (MacOS)
-remove pnpm
-
-run it with: `cocmd run node.remove.pnpm`
-
 ### node.setup (MacOS)
-setup node on macos
 
 run it with: `cocmd run node.setup`
 
-### node.clean-cache
-Clean node cache and build artifacts
+### node.remove.pnpm (MacOS)
 
-run it with: `cocmd run node.clean-cache`
+run it with: `cocmd run node.remove.pnpm`
+
+### node.setup.pnpm (Windows, Linux, MacOS)
+
+run it with: `cocmd run node.setup.pnpm`
 
 
 

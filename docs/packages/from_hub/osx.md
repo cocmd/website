@@ -12,15 +12,13 @@ cocmd install -y osx
 
 This package contains 2 playbooks:
 
-### osx.setup.brew (MacOS)
-setup brew
-
-run it with: `cocmd run osx.setup.brew`
-
 ### osx.setup (MacOS)
-Setup common packages on macOS
 
 run it with: `cocmd run osx.setup`
+
+### osx.setup.brew (MacOS)
+
+run it with: `cocmd run osx.setup.brew`
 
 
 

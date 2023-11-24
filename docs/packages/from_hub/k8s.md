@@ -12,35 +12,9 @@ cocmd install -y k8s
 
 This package contains 5 playbooks:
 
-### k8s.setup (MacOS)
-setup Kubernetes for desktop
+### k8s.setup (Linux, MacOS)
 
 run it with: `cocmd run k8s.setup`
-
-### k8s.setup (Linux)
-Setup Kubernetes for desktop on Linux
-
-run it with: `cocmd run k8s.setup`
-
-### k8s.backup-configmaps
-Backup all ConfigMaps in a namespace
-
-run it with: `cocmd run k8s.backup-configmaps`
-
-### k8s.rolling-restart
-Perform a rolling restart of a Deployment
-
-run it with: `cocmd run k8s.rolling-restart`
-
-### k8s.batch-pod-deletion
-Batch delete Pods based on a label
-
-run it with: `cocmd run k8s.batch-pod-deletion`
-
-### k8s.check-pod-restarts
-Check for Pods with restart counts greater than 0
-
-run it with: `cocmd run k8s.check-pod-restarts`
 
 
 
