@@ -20,11 +20,11 @@ run it with: `cocmd run docker.setup`
 setup docker for desktop
 run it with: `cocmd run docker.setup`
 
-### docker.cleanup (Any)
+### docker.cleanup
 Cleanup Docker environment
 run it with: `cocmd run docker.cleanup`
 
-### docker.monitor (Any)
+### docker.monitor
 Monitor Docker resources
 run it with: `cocmd run docker.monitor`
 

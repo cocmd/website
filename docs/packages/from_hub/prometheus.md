@@ -12,7 +12,7 @@ cocmd install -y prometheus
 
 This package contains 1 playbooks:
 
-### prometheus.query-condition (Any)
+### prometheus.query-condition
 Run a prometheus query and check if a condition is true
 run it with: `cocmd run prometheus.query-condition`
 

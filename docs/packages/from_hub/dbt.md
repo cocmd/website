@@ -12,11 +12,11 @@ cocmd install -y dbt
 
 This package contains 2 playbooks:
 
-### dbt.setup (Any)
+### dbt.setup
 Setup python
 run it with: `cocmd run dbt.setup`
 
-### dbt.setup.from-source (Any)
+### dbt.setup.from-source
 Setup python
 run it with: `cocmd run dbt.setup.from-source`
 

@@ -12,11 +12,11 @@ cocmd install -y impala
 
 This package contains 2 playbooks:
 
-### impala.setup (Any)
+### impala.setup
 Install required packages for Impala
 run it with: `cocmd run impala.setup`
 
-### impala.query (Any)
+### impala.query
 Run a query on Impala
 run it with: `cocmd run impala.query`
 

@@ -16,7 +16,7 @@ This package contains 3 playbooks:
 Install and configure git on this machine
 run it with: `cocmd run git.setup`
 
-### git.commit-push-all (Any)
+### git.commit-push-all
 add all, commit and push
 run it with: `cocmd run git.commit-push-all`
 

@@ -28,7 +28,7 @@ run it with: `cocmd run python.setup.miniconda`
 Setup Poetry for Python development
 run it with: `cocmd run python.setup-poetry`
 
-### python.conda-env-create (Any)
+### python.conda-env-create
 Create a conda environment
 run it with: `cocmd run python.conda-env-create`
 

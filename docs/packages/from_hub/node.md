@@ -12,7 +12,7 @@ cocmd install -y node
 
 This package contains 5 playbooks:
 
-### node.setup.yarn (Any)
+### node.setup.yarn
 setup yarn
 run it with: `cocmd run node.setup.yarn`
 
@@ -36,7 +36,7 @@ run it with: `cocmd run node.remove.pnpm`
 setup node on macos
 run it with: `cocmd run node.setup`
 
-### node.clean-cache (Any)
+### node.clean-cache
 Clean node cache and build artifacts
 run it with: `cocmd run node.clean-cache`
 

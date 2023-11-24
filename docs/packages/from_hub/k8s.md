@@ -20,19 +20,19 @@ run it with: `cocmd run k8s.setup`
 Setup Kubernetes for desktop on Linux
 run it with: `cocmd run k8s.setup`
 
-### k8s.backup-configmaps (Any)
+### k8s.backup-configmaps
 Backup all ConfigMaps in a namespace
 run it with: `cocmd run k8s.backup-configmaps`
 
-### k8s.rolling-restart (Any)
+### k8s.rolling-restart
 Perform a rolling restart of a Deployment
 run it with: `cocmd run k8s.rolling-restart`
 
-### k8s.batch-pod-deletion (Any)
+### k8s.batch-pod-deletion
 Batch delete Pods based on a label
 run it with: `cocmd run k8s.batch-pod-deletion`
 
-### k8s.check-pod-restarts (Any)
+### k8s.check-pod-restarts
 Check for Pods with restart counts greater than 0
 run it with: `cocmd run k8s.check-pod-restarts`
 
