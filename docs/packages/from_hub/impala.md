@@ -14,10 +14,12 @@ This package contains 2 playbooks:
 
 ### impala.setup
 Install required packages for Impala
+
 run it with: `cocmd run impala.setup`
 
 ### impala.query
 Run a query on Impala
+
 run it with: `cocmd run impala.query`
 
 
