@@ -64,7 +64,7 @@ export default function HomeFeatures() {
             Makefiles don't cut it anymore...
           </p>
         </SmallFeature>
-        <SmallFeature
+        {/* <SmallFeature
           title="Just share Scripts & Aliases"
           icon={
             <CommandLineIcon className={styles["small-feature-icon"]} />
@@ -76,7 +76,7 @@ export default function HomeFeatures() {
 
 
           </p>
-        </SmallFeature>
+        </SmallFeature> */}
         
         
       </div>
