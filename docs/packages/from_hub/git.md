@@ -12,13 +12,23 @@ cocmd install -y git
 
 This package contains 3 playbooks:
 
+### git.setup.github (Windows, MacOS, Linux)
+install github cli
+
+
+run it with: `cocmd run git.setup.github`
+
 ### git.setup (MacOS)
+Install and configure git on this machine
+
 
 run it with: `cocmd run git.setup`
 
-### git.setup.github (MacOS, Windows, Linux)
+### git.commit-push-all (Any)
+add all, commit and push
 
-run it with: `cocmd run git.setup.github`
+
+run it with: `cocmd run git.commit-push-all`
 
 
 

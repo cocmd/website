@@ -10,6 +10,20 @@ cocmd install -y jenkins
 :::
 
 
-This package contains no playbooks
+This package contains 2 playbooks:
+
+### jenkins.lastbuild-check (Any)
+Check the status of the latest build of a Jenkins job
+
+
+run it with: `cocmd run jenkins.lastbuild-check`
+
+### jenkins.run-build (Any)
+Trigger a Jenkins job and optionally monitor its execution
+
+
+run it with: `cocmd run jenkins.run-build`
+
+
 
 

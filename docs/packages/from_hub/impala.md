@@ -10,6 +10,20 @@ cocmd install -y impala
 :::
 
 
-This package contains no playbooks
+This package contains 2 playbooks:
+
+### impala.setup (Any)
+Install required packages for Impala
+
+
+run it with: `cocmd run impala.setup`
+
+### impala.query (Any)
+Run a query on Impala
+
+
+run it with: `cocmd run impala.query`
+
+
 
 

@@ -12,17 +12,35 @@ cocmd install -y docker
 
 This package contains 5 playbooks:
 
-### docker.start (Linux, MacOS)
+### docker.setup (MacOS, Linux)
+setup docker for desktop
 
-run it with: `cocmd run docker.start`
+
+run it with: `cocmd run docker.setup`
 
 ### docker.build-run (MacOS)
+Build and run a Docker image
+
 
 run it with: `cocmd run docker.build-run`
 
-### docker.setup (Linux, MacOS)
+### docker.monitor (Any)
+Monitor Docker resources
 
-run it with: `cocmd run docker.setup`
+
+run it with: `cocmd run docker.monitor`
+
+### docker.start (Linux, MacOS)
+Start docker
+
+
+run it with: `cocmd run docker.start`
+
+### docker.cleanup (Any)
+Cleanup Docker environment
+
+
+run it with: `cocmd run docker.cleanup`
 
 
 

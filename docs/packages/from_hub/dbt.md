@@ -10,6 +10,20 @@ cocmd install -y dbt
 :::
 
 
-This package contains no playbooks
+This package contains 2 playbooks:
+
+### dbt.setup.from-source (Any)
+Setup python
+
+
+run it with: `cocmd run dbt.setup.from-source`
+
+### dbt.setup (Any)
+Setup python
+
+
+run it with: `cocmd run dbt.setup`
+
+
 
 
